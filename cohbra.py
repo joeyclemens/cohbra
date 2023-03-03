@@ -57,9 +57,7 @@ with col2:
     st.write(rooms)
 
 st.header("Costs")
-# import matplotlib and set style
-import matplotlib.pyplot as plt
-plt.style.use('ggplot')
+
 
 # create data for the pie chart
 labels = ['Completed', 'Remaining']
