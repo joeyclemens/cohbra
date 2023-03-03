@@ -41,10 +41,10 @@ st.altair_chart(final_chart, use_container_width=True)
 st.header("Progress")
 
 # Define the room information as a pandas dataframe
-progress = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/progress.csv')
+progress = pd.read_csv('progress.csv')
 
 # Define the room information as a pandas dataframe
-rooms = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/priority.csv')
+rooms = pd.read_csv('priority.csv')
 
 # Display the tables side-by-side
 col1, col2 = st.columns(2)
