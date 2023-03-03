@@ -56,5 +56,27 @@ with col2:
     st.header("List of Priority Rooms")
     st.write(rooms)
 
+st.header("Costs")
+# import matplotlib and set style
+import matplotlib.pyplot as plt
+plt.style.use('ggplot')
+
+# create data for the pie chart
+labels = ['Completed', 'Remaining']
+sizes = [166, 16]
+colors = ['#1f77b4', '#d62728']
+
+# plot the pie chart
+fig_pie, ax_pie = plt.subplots()
+ax_pie.pie(sizes, labels=labels, colors=colors, startangle=90, autopct='%1.1f%%')
+ax_pie.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+# set the title of the pie chart
+ax_pie.set_title('Costing Completion Percentage')
+
+# display the pie chart in streamlit
+st.write(fig_pie)
+
+
 
 
