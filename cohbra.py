@@ -18,7 +18,7 @@ data['Dates'] = pd.to_datetime(data['Dates'], format='%d/%m/%Y').dt.strftime('%Y
 # Define the line chart using Altair
 chart = alt.Chart(data).mark_line().encode(
     x='Dates',
-    y=alt.Y('Actual', sort=None, title='Targets'),
+    y=alt.Y('Actual',sort=None, title='Targets'),
     tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
 )
 
@@ -40,37 +40,21 @@ st.altair_chart(final_chart, use_container_width=True)
 # Set the header of the table
 st.header("Progress")
 
-# Define the progress information and rooms information as pandas dataframes
+# Define the room information as a pandas dataframe
 progress = pd.read_csv('progress.csv')
+
+# Define the room information as a pandas dataframe
 rooms = pd.read_csv('priority.csv')
-costs = pd.read_csv(r'costs.csv')
 
 # Display the tables side-by-side
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 with col1:
     st.header("Progress")
     st.write(progress)
+
 with col2:
     st.header("List of Priority Rooms")
     st.write(rooms)
-with col3:
-    st.header("Costs")
-    # Get total cost of each category
-    cost_by_category = costs.groupby('Category')['Amount'].sum()
-    # Create the pie chart using Altair
-    pie_chart = alt.Chart(cost_by_category.reset_index()).mark_circle().encode(
-        alt.Color('Category', legend=None),
-        tooltip=['Category', 'Amount']
-    ).transform_aggregate(
-        Amount='sum(Amount)',
-        groupby=['Category']
-    ).transform_joinaggregate(
-        Total='sum(Amount)'
-    ).transform_calculate(
-        Percent="datum.Amount / datum.Total"
-    ).mark_bar().encode(
-        x='Percent:Q',
-        y=alt.Y('Category:N', sort='-x'),
-        color='Category:N'
-    )
-    st.altair_chart(pie_chart, use_container_width=True)
+
+
+
