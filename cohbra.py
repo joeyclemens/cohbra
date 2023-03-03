@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+import matplotlib.pyplot as plt
 
 # Set main page title
 st.title("MJM Cohbra Workshop")
@@ -58,7 +59,6 @@ with col2:
 
 st.header("Costs")
 # import matplotlib and set style
-
 plt.style.use('ggplot')
 
 # create data for the pie chart
