@@ -81,17 +81,4 @@ st.write(cost)
 
 
 
-# Define the data for the pie chart
-pie_data = pd.DataFrame({
-    'Component': ['Equipment', 'Construction', 'Labor'],
-    'Value': [35000, 45000, 25000]
-})
-
-# Create the pie chart using plotly
-fig = px.pie(pie_data, values='Value', names='Component')
-
-# Display the chart
-st.plotly_chart(fig)
-
-
 
