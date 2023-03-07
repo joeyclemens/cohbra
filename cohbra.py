@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 import numpy as np
-import plotly.express as px
+
 
 # Set main page title
 st.title("")
