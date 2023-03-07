@@ -3,16 +3,21 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Set main page title
 st.title("")
+# Open image
+image = Image.open('MJMEDICAL.png')
 
+# Display image
+st.image(image)
 
 # Define the data as a pandas dataframe
 data = pd.DataFrame({
     'Dates': ['16/12/2022', '01/01/2023', '01/02/2023', '01/03/2023', '01/04/2023', '01/05/2023', '01/06/2023'],
     'Target': [10, 20, 30, 40, 50, 60, 69],
-    'Actual': [16, 26, 29, 29, None, None, None]
+    'Actual': [16, None, None, None, None, None, None]
 })
 
 # Convert Dates column to datetime type for plotting purposes with first day of the month
@@ -36,16 +41,16 @@ target_line = alt.Chart(data).mark_line(strokeDash=[5, 5], stroke='red').encode(
 final_chart = chart + target_line
 
 # Set the subtitle of the chart
-st.subheader("Progress so far")
+st.subheader("Progress")
 
 # Display the chart
 st.altair_chart(final_chart, use_container_width=True)
 
 # Set the header of the table
-st.header("Progress")
+st.header("")
 
 # Define the room information as a pandas dataframe
-progress = pd.read_csv('progress.csv')
+progress = pd.read_csv('C:progress.csv')
 
 # Define the room information as a pandas dataframe
 rooms = pd.read_csv('priority.csv')
@@ -60,7 +65,7 @@ with col2:
     st.header("List of Priority Rooms")
     st.write(rooms)
 
-st.header("Data entry and room loading completion")
+st.header("Equipment planning, room loading completion and Activities")
 # Define the room information as a pandas dataframe
 datroom = pd.read_csv('dataent.csv')
 
@@ -68,9 +73,13 @@ datroom = pd.read_csv('dataent.csv')
 st.write(datroom)
 
 st.header("Costs")
-# import matplotlib and set style
-import matplotlib.pyplot as plt
-plt.style.use('dark_background')
+# Define the room information as a pandas dataframe
+cost = pd.read_csv('costs.csv')
+
+st.header("Cost table")
+st.write(cost)
+
+st.header("Costing Completion Percentage")
 
 # create data for the pie chart
 labels = ['Completed', 'Remaining']
@@ -86,10 +95,4 @@ ax_pie.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle
 ax_pie.set_title('Costing Completion Percentage')
 
 # display the pie chart in streamlit
-st.write(fig_pie)
-
-# Define the room information as a pandas dataframe
-cost = pd.read_csv('costs.csv')
-
-st.header("Cost table")
-st.write(cost)
+st.pyplot(fig_pie)
