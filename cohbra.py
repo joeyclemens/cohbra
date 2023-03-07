@@ -76,12 +76,6 @@ st.header("Costs")
 # Define the room information as a pandas dataframe
 cost = pd.read_csv('costs.csv')
 
-st.header("Cost table")
-st.write(cost)
-
-# Define the room information as a pandas dataframe
-cost = pd.read_csv('costs.csv')
-
 # Count the number of times 'cohbra' appears in the 'Cost Source Manufacturer' column
 count = len(cost[cost['Cost Source Manufacturer'] == 'Cohbra'])
 
@@ -91,4 +85,12 @@ percentage = (count / total_rows) * 100
 
 # Display the result in Streamlit
 st.write(f"Costs are at {percentage:.2f}% completion.")
+
+# Define the room information as a pandas dataframe
+cost = pd.read_csv('costs.csv')
+
+st.header("Cost table")
+st.write(cost)
+
+
 
