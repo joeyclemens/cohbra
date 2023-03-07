@@ -78,7 +78,6 @@ cost = pd.read_csv('costs.csv')
 
 st.header("Cost table")
 st.write(cost)
-st.header("Costing Completion Percentage")
 
 
 
