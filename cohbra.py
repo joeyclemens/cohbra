@@ -17,7 +17,7 @@ st.image(image)
 data = pd.DataFrame({
     'Dates': ['16/12/2022', '01/01/2023', '01/02/2023', '01/03/2023', '01/04/2023', '01/05/2023', '01/06/2023'],
     'Target': [10, 20, 30, 40, 50, 60, 69],
-    'Actual': [16, None, None, None, None, None, None]
+    'Actual': [16, 22, 30, None, None, None, None]
 })
 
 # Convert Dates column to datetime type for plotting purposes with first day of the month
