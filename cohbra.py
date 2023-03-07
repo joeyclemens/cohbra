@@ -79,8 +79,4 @@ cost = pd.read_csv('costs.csv')
 st.header("Cost table")
 st.write(cost)
 
-cobra_count = len(cost[cost["Cost Source Manufacturer"] == "Cobra"])
-total_rows = cost.shape[0]
-cobra_percentage = cobra_count / total_rows * 100
-
 
