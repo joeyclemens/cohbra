@@ -79,20 +79,5 @@ cost = pd.read_csv('costs.csv')
 st.header("Cost table")
 st.write(cost)
 
-# Define the bar chart using Altair
-bar_chart = alt.Chart(cost).mark_bar().encode(
-    x=alt.X('Component', sort=None),
-    y=alt.Y('Value', title='Component Cost'),
-    color=alt.condition(
-        alt.datum.Value > 100000,
-        alt.value('red'),
-        alt.value('steelblue')
-    ),
-    tooltip=[alt.Tooltip('Component', title='Cost Component'), alt.Tooltip('Value', format=".2f", title='Amount ($USD)')]
-)
-
-# Display the chart
-st.altair_chart(bar_chart, use_container_width=True)
-
 
 
