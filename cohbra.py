@@ -50,7 +50,7 @@ st.altair_chart(final_chart, use_container_width=True)
 st.header("")
 
 # Define the room information as a pandas dataframe
-progress = pd.read_csv('C:progress.csv')
+progress = pd.read_csv('progress.csv')
 
 # Define the room information as a pandas dataframe
 rooms = pd.read_csv('priority.csv')
