@@ -45,10 +45,10 @@ st.altair_chart(final_chart, use_container_width=True)
 st.header("Progress")
 
 # Define the room information as a pandas dataframe
-progress = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/progress.csv')
+progress = pd.read_csv('progress.csv')
 
 # Define the room information as a pandas dataframe
-rooms = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/priority.csv')
+rooms = pd.read_csv('priority.csv')
 
 # Display the tables side-by-side
 col1, col2 = st.columns(2)
@@ -62,7 +62,7 @@ with col2:
 
 st.header("Data entry and room loading completion")
 # Define the room information as a pandas dataframe
-datroom = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/dataent.csv')
+datroom = pd.read_csv('dataent.csv')
 
 
 st.write(datroom)
@@ -89,7 +89,7 @@ ax_pie.set_title('Costing Completion Percentage')
 st.write(fig_pie)
 
 # Define the room information as a pandas dataframe
-cost = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/costs.csv')
+cost = pd.read_csv('costs.csv')
 
 st.header("Cost table")
 st.write(cost)
