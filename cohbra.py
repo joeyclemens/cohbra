@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 import numpy as np
-
+import plotly.express as px
 
 # Set main page title
 st.title("")
@@ -79,7 +79,7 @@ cost = pd.read_csv('costs.csv')
 st.header("Cost table")
 st.write(cost)
 
-import plotly.express as px
+
 
 # Define the data for the pie chart
 pie_data = pd.DataFrame({
