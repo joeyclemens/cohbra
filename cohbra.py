@@ -1,10 +1,12 @@
 import streamlit as st
+from PIL import Image
 import pandas as pd
 import altair as alt
-
+import numpy as np
 
 # Set main page title
-st.title("MJM Cohbra Workshop")
+st.title("")
+
 
 # Define the data as a pandas dataframe
 data = pd.DataFrame({
@@ -23,6 +25,7 @@ chart = alt.Chart(data).mark_line().encode(
     tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
 )
 
+
 # Add target line to chart
 target_line = alt.Chart(data).mark_line(strokeDash=[5, 5], stroke='red').encode(
     x='Dates',
@@ -33,7 +36,7 @@ target_line = alt.Chart(data).mark_line(strokeDash=[5, 5], stroke='red').encode(
 final_chart = chart + target_line
 
 # Set the subtitle of the chart
-st.subheader("Progress")
+st.subheader("Progress so far")
 
 # Display the chart
 st.altair_chart(final_chart, use_container_width=True)
@@ -42,10 +45,10 @@ st.altair_chart(final_chart, use_container_width=True)
 st.header("Progress")
 
 # Define the room information as a pandas dataframe
-progress = pd.read_csv('progress.csv')
+progress = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/progress.csv')
 
 # Define the room information as a pandas dataframe
-rooms = pd.read_csv('priority.csv')
+rooms = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/priority.csv')
 
 # Display the tables side-by-side
 col1, col2 = st.columns(2)
@@ -57,10 +60,17 @@ with col2:
     st.header("List of Priority Rooms")
     st.write(rooms)
 
+st.header("Data entry and room loading completion")
+# Define the room information as a pandas dataframe
+datroom = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/dataent.csv')
+
+
+st.write(datroom)
+
 st.header("Costs")
 # import matplotlib and set style
 import matplotlib.pyplot as plt
-plt.style.use('ggplot')
+plt.style.use('dark_background')
 
 # create data for the pie chart
 labels = ['Completed', 'Remaining']
@@ -78,8 +88,8 @@ ax_pie.set_title('Costing Completion Percentage')
 # display the pie chart in streamlit
 st.write(fig_pie)
 
+# Define the room information as a pandas dataframe
+cost = pd.read_csv('C:/Users/Joey/Desktop/streamlit cohbra/costs.csv')
 
-
-
-
-
+st.header("Cost table")
+st.write(cost)
