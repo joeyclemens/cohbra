@@ -79,20 +79,6 @@ cost = pd.read_csv('costs.csv')
 st.header("Cost table")
 st.write(cost)
 
-st.header("Costing Completion Percentage")
 
-# create data for the pie chart
-labels = ['Completed', 'Remaining']
-sizes = [166, 16]
-colors = ['#1f77b4', '#d62728']
 
-# plot the pie chart
-fig_pie, ax_pie = plt.subplots()
-ax_pie.pie(sizes, labels=labels, colors=colors, startangle=90, autopct='%1.1f%%')
-ax_pie.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-# set the title of the pie chart
-ax_pie.set_title('Costing Completion Percentage')
-
-# display the pie chart in streamlit
-st.pyplot(fig_pie)
