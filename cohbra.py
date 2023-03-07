@@ -80,5 +80,15 @@ st.header("Cost table")
 st.write(cost)
 
 
+# Define the bar chart using Altair
+chart = alt.Chart(cost).mark_bar().encode(
+    x='Component',
+    y='Value',
+    tooltip=[alt.Tooltip('Component', title='Cost Component'), alt.Tooltip
+('Value', title='Cost Value')]
+)
 
+st.subheader("Cost Breakdown by Component")
+
+st.altair_chart(chart, use_container_width=True)
 
