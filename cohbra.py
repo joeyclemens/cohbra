@@ -4,7 +4,6 @@ import pandas as pd
 import altair as alt
 import numpy as np
 
-
 # Set main page title
 st.title("")
 # Open image
@@ -30,7 +29,6 @@ chart = alt.Chart(data).mark_line().encode(
     tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
 )
 
-
 # Add target line to chart
 target_line = alt.Chart(data).mark_line(strokeDash=[5, 5], stroke='red').encode(
     x='Dates',
@@ -46,51 +44,41 @@ st.subheader("Progress")
 # Display the chart
 st.altair_chart(final_chart, use_container_width=True)
 
-# Set the header of the table
-st.header("")
 
-# Define the room information as a pandas dataframe
-progress = pd.read_csv('progress.csv')
+# Create a navigation sidebar with options to jump to different sections of the page
+nav = st.sidebar.radio("",["Progress","List of Priority Rooms","Equipment planning, room loading completion and Activities", "Costs"])
 
-# Define the room information as a pandas dataframe
-rooms = pd.read_csv('priority.csv')
-
-# Display the tables side-by-side
-col1, col2 = st.columns(2)
-with col1:
+# Show the appropriate section based on the selected option
+if nav == "Progress":
+    # Define the header of the table
     st.header("Progress")
+    # Define the room information as a pandas dataframe
+    progress = pd.read_csv('progress.csv')
+    # Display the table
     st.write(progress)
-
-with col2:
+elif nav == "List of Priority Rooms":
+    # Define the header of the table
     st.header("List of Priority Rooms")
+    # Define the room information as a pandas dataframe
+    rooms = pd.read_csv('priority.csv')
+    # Display the table
     st.write(rooms)
-
-st.header("Equipment planning, room loading completion and Activities")
-# Define the room information as a pandas dataframe
-datroom = pd.read_csv('dataent.csv')
-
-
-st.write(datroom)
-
-st.header("Costs")
-# Define the room information as a pandas dataframe
-cost = pd.read_csv('costs.csv')
-
-# Count the number of times 'cohbra' appears in the 'Cost Source Manufacturer' column
-count = len(cost[cost['Cost Source Manufacturer'] == 'Cohbra'])
-
-# Calculate the percentage of rows that have 'cohbra' as the manufacturer
-total_rows = len(cost)
-percentage = (count / total_rows) * 100
-
-# Display the result in Streamlit
-st.write(f"Costs are at {percentage:.2f}% completion.")
-
-# Define the room information as a pandas dataframe
-cost = pd.read_csv('costs.csv')
-
-st.header("Cost table")
-st.write(cost)
-
-
-
+elif nav == "Equipment planning, room loading completion and Activities":
+    # Define the room information as a pandas dataframe
+    datroom = pd.read_csv('dataent.csv')
+    st.header("Equipment planning, room loading completion and Activities")
+    st.write(datroom)
+elif nav == "Costs":
+    # Define the header of the table
+    st.header("Costs")
+    # Define the room information as a pandas dataframe
+    cost = pd.read_csv('costs.csv')
+    # Count the number of times 'cohbra' appears in the 'Cost Source Manufacturer' column
+    count = len(cost[cost['Cost Source Manufacturer'] == 'Cohbra'])
+    # Calculate the percentage of rows that have 'cohbra' as the manufacturer
+    total_rows = len(cost)
+    percentage = (count / total_rows) * 100
+    # Display the percentage of costs for the chosen manufacturer
+    st.write(f"Costs are at {percentage:.2f}% completion.")
+    # Display the table
+    st.write(cost)
