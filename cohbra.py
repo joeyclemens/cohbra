@@ -12,25 +12,23 @@ image = Image.open('MJMEDICAL.png')
 # Display image
 st.image(image)
 
-# Define the data as a pandas dataframe
-data = pd.DataFrame({
-    'Dates': ['01/03/2023', '01/04/2023', '01/05/2023', '01/06/2023'],
-    'Target': [17, 35, 52, 69],
-    'Actual': [8, None, None, None]
-})
+# Load data from CSV file
+df = pd.read_csv('progress.csv')
 
 # Convert Dates column to datetime type for plotting purposes with first day of the month
-data['Dates'] = pd.to_datetime(data['Dates'], format='%d/%m/%Y').dt.strftime('%Y-%m-01')
+df['Dates'] = pd.to_datetime(df['Dates'], format='%d/%m/%Y').dt.strftime('%Y-%m-01')
 
 # Define the line chart using Altair
-chart = alt.Chart(data).mark_line().encode(
+chart = alt.Chart(df).mark_line().encode(
     x='Dates',
-    y=alt.Y('Actual',sort=None, title='Targets'),
+    y=alt.Y('Actual', sort=None, title='Targets'),
     tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
+).properties(
+    width=800  # Set the chart width to 800 pixels
 )
 
 # Add target line to chart
-target_line = alt.Chart(data).mark_line(strokeDash=[5, 5], stroke='red').encode(
+target_line = alt.Chart(df).mark_line(strokeDash=[5, 5], stroke='red').encode(
     x='Dates',
     y=alt.Y('Target', sort=alt.EncodingSortField(field='Target', order='ascending')),
 )
@@ -41,8 +39,7 @@ final_chart = chart + target_line
 # Set the subtitle of the chart
 st.subheader("Progress")
 
-# Display the chart
-st.altair_chart(final_chart, use_container_width=True)
+st.altair_chart(final_chart)
 
 
 # Create a navigation sidebar with options to jump to different sections of the page
@@ -82,3 +79,7 @@ elif nav == "Costs":
     st.write(f"Costs are at {percentage:.2f}% completion.")
     # Display the table
     st.write(cost)
+
+   
+
+
