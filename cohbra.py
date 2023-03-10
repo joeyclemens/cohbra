@@ -71,7 +71,7 @@ elif nav == "Costs":
     # Define the room information as a pandas dataframe
     cost = pd.read_csv('costs.csv')
     # Count the number of times 'cohbra' appears in the 'Cost Source Manufacturer' column
-    count = len(cost[cost['Cost Source Manufacturer'] == 'Cohbra'])
+    count = len(cost[cost['Cost Source Manufacturer'] == 'Craven'])
     # Calculate the percentage of rows that have 'cohbra' as the manufacturer
     total_rows = len(cost)
     percentage = (count / total_rows) * 100
