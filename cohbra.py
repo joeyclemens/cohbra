@@ -28,7 +28,7 @@ chart = alt.Chart(df).mark_line().encode(
 )
 
 # Add target line to chart
-target_line = alt.Chart(df).mark_line(strokeDash=[5, 5], stroke='red').encode(
+target_line = alt.Chart(df).mark_line(strokeDash=[13, 13], stroke='red').encode(
     x='Dates',
     y=alt.Y('Target', sort=alt.EncodingSortField(field='Target', order='ascending')),
 )
