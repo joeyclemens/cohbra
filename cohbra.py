@@ -71,7 +71,7 @@ elif nav == "Costs":
     # Define the room information as a pandas dataframe
     costs = pd.read_csv('costs.csv')
     # Count the number of non-null values in the 'Cost Source Manufacturer' column
-count = len(costs['Cost Source Manufacturer'].dropna())
+count = len(cost[cost['Cost Source Manufacturer'].notnull()])
 
     # Calculate the percentage of rows that have 'cohbra' as the manufacturer
 total_rows = len(costs)
