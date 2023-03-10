@@ -74,12 +74,12 @@ elif nav == "Costs":
 count = len(cost['Cost Source Manufacturer'].dropna())
 
     # Calculate the percentage of rows that have 'cohbra' as the manufacturer
-    total_rows = len(cost)
-    percentage = (count / total_rows) * 100
+total_rows = len(cost)
+percentage = (count / total_rows) * 100
     # Display the percentage of costs for the chosen manufacturer
-    st.write(f"Costs are at {percentage:.2f}% completion.")
+st.write(f"Costs are at {percentage:.2f}% completion.")
     # Display the table
-    st.write(cost)
+st.write(cost)
 
    
 
