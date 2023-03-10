@@ -69,17 +69,16 @@ elif nav == "Costs":
     # Define the header of the table
     st.header("Costs")
     # Define the room information as a pandas dataframe
-    costs = pd.read_csv('costs.csv')
-    # Count the number of non-null values in the 'Cost Source Manufacturer' column
-count = len(cost[cost['Cost Source Manufacturer'].notnull()])
-
+    cost = pd.read_csv('costs.csv')
+    # Count the number of times 'cohbra' appears in the 'Cost Source Manufacturer' column
+    count = len(cost[cost['Cost Source Manufacturer'] == 'Cohbra'])
     # Calculate the percentage of rows that have 'cohbra' as the manufacturer
-total_rows = len(costs)
-percentage = (count / total_rows) * 100
+    total_rows = len(cost)
+    percentage = (count / total_rows) * 100
     # Display the percentage of costs for the chosen manufacturer
-st.write(f"Costs are at {percentage:.2f}% completion.")
+    st.write(f"Costs are at {percentage:.2f}% completion.")
     # Display the table
-st.write(costs)
+    st.write(cost)
 
    
 
