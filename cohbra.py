@@ -54,23 +54,54 @@ total_progress = pd.read_csv('total_progress.csv')
 dataentry_progress = pd.read_csv('dataentry_progress.csv')
 roomloading_progress = pd.read_csv('roomloading_progress.csv')
 activity_progress = pd.read_csv('activity_progress.csv')
-
-dates = total_progress.Dates.tolist()
-date_format = "%d/%m/%Y"
-parsed_dates = [datetime.strptime(date, date_format) for date in dates]
-total_progress['Dates'] = pd.Series(parsed_dates)
+costs = pd.read_csv('costs.csv')
 
 
-charts = {
-    'Total Progress': total_progress,
-    'Equipment Planning Progress': dataentry_progress,
-    'Room Loading Progress': roomloading_progress,
-    'Activity Progress': activity_progress
+
+
+tables = {
+    'Costs': costs
+    
 }
 
+
+
+
 # Add selectbox to choose which graph and table to show
-chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
+option = st.sidebar.selectbox('Select an option',
+                             ['Charts', 'Costs'])
 
-selected_chart = charts[chart_choice]
+if option == 'Charts':
+    charts = {
+        'Total Progress': total_progress,
+        'Equipment Planning Progress': dataentry_progress,
+        'Room Loading Progress': roomloading_progress,
+        'Activity Progress': activity_progress
+    }
 
-create_line_chart(selected_chart, chart_choice)
+    chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
+
+    selected_chart = charts[chart_choice]
+
+    create_line_chart(selected_chart, chart_choice)
+
+elif option == 'Costs':
+     # Count the number of times 'Cohbra' appears in the 'Cost Source Manufacturer' column
+    count = len(costs[costs['Cost Source Manufacturer'] == 'Cohbra'])
+
+    # Calculate the percentage of rows that have 'Cohbra' as the manufacturer
+    total_rows = len(costs)
+    percentage = (count / total_rows) * 100
+
+      # Display the percentage of costs for the chosen manufacturer
+    st.write(f"Costs are at {percentage:.2f}% completion.")
+    table_choice = st.sidebar.selectbox('Choose data', list(tables.keys()))
+
+    selected_table = tables[table_choice]
+
+
+
+    st.dataframe(selected_table)
+
+
+ 
