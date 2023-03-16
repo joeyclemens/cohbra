@@ -1,0 +1,16 @@
+Item Ref,Room Code,Item Description,Unit Cost,Cost Source Manufacturer,Cost Date,Parent Area,Parent Area1
+AID9005,OT007,"AID, positioning, Omnidirectional Tube Support",200,Cohbra,10/03/2023,OT,1F
+CTH9004,OT017,"ACTIVATED COAGULATION TIMER, cath lab",5400,,,OT,1F
+CTH9005,OT017,"HAEMOXIMETER, cath lab",5000,,,OT,1F
+HAR9001,OT007,HARMONIC machine,,,,OT,1F
+MIC045,OUT017,"MICROCSOPE ENT, ceiling mounted",15000,Cohbra,10/03/2023,OUT,1F
+MON9011,IMG017,"MONITOR and CONTROL for CCTV, complete with flat screen monitor, keyboard, digital recorder (computer) and power supply",24050,,,IMG,1F
+MSC002,WHO001,"CABINET tall, 600mm facing, (600x400 inserts), with formed plastic liners and 10 telescopic runners, open, on plinth, o/a height 2100",1200,Cohbra,10/03/2023,WHO,1F
+MSC003,WHO001,"CABINET tall, 600mm facing, (600x400 inserts), with formed plastic liners and 5 telescopic runners, open, on plinth, o/a height 2100",1200,Cohbra,10/03/2023,WHO,1F
+MSC043,OT003,"CABINET tall, 600mm facing, (600x400 inserts), with formed plastic liners and 10 telescopic runners, 1 door hinged right, on plinth, o/a height 2100",1200,Cohbra,10/03/2023,OT,1F
+MSC044,OT003,"CABINET tall, 600mm facing, (600x400 inserts), with formed plastic liners and 10 telescopic runners, 1 door hinged left, on plinth, o/a height 2100",1200,Cohbra,10/03/2023,OT,1F
+SCR9012,OT029,"SCREEN, retractable, wall mounted, L-Shaped, approx 1900H 3200W 3200D",3200,Cohbra,10/03/2023,OT,1F
+SEA004,WHO025,"SEAT, bench, wall mounted, 480H 1300W 400D",200,Cohbra,10/03/2023,WHO,1F
+SEQ9000,OT007,SEQUENTIAL COMPRESSION UNIT,2500,,,OT,1F
+STF9009,IMG016,"STORAGE UNIT, Non-ferrous MRI compatible, MRI coil storage, lockable,  1400H 1870W 600D",3900,,,IMG,1F
+XRA023,ED003,"X-RAY CONTROL CABINET for generator, freestanding, 950H 850W 535D",0,,10/03/2023,ED,1F
