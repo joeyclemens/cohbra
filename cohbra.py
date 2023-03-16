@@ -86,6 +86,8 @@ if option == 'Charts':
     create_line_chart(selected_chart, chart_choice)
 
 elif option == 'Costs':
+    
+    table_choice = st.sidebar.selectbox('Costs', list(tables.keys()))
      # Count the number of times 'Cohbra' appears in the 'Cost Source Manufacturer' column
     count = len(costs[costs['Cost Source Manufacturer'] == 'Cohbra'])
 
@@ -95,7 +97,8 @@ elif option == 'Costs':
 
       # Display the percentage of costs for the chosen manufacturer
     st.write(f"Costs are at {percentage:.2f}% completion.")
-    table_choice = st.sidebar.selectbox('Costs', list(tables.keys()))
+    
+    
 
     selected_table = tables[table_choice]
 
