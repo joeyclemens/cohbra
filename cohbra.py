@@ -4,8 +4,11 @@ import pandas as pd
 import altair as alt
 from datetime import datetime
 
+
 # Set main page title
 st.title("KPI Dashboard")
+
+
 
 # Define function to create the line chart using Altair
 def create_line_chart(df, title):
@@ -19,7 +22,7 @@ def create_line_chart(df, title):
         y=alt.Y('Actual', sort=None, title='Targets'),
         tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
     ).properties(
-        width=1000  # Set the chart width to 1000 pixels
+        width=800  # Set the chart width to 800 pixels
     )
 
     # Add target line to chart
@@ -57,10 +60,6 @@ activity_progress = pd.read_csv('activity_progress.csv')
 cost_progress = pd.read_csv('cost_progress.csv')
 ###################
 priority = pd.read_csv('dataent.csv')
-
-
-
-
 costs = pd.read_csv('costs.csv')
 
 tables = {
@@ -97,8 +96,7 @@ elif option == 'Tables':
         
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
     
-    st.dataframe(selected_table)
+    st.table(selected_table)
 
-    
 
  
