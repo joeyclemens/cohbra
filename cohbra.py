@@ -95,7 +95,7 @@ elif option == 'Costs':
 
       # Display the percentage of costs for the chosen manufacturer
     st.write(f"Costs are at {percentage:.2f}% completion.")
-    table_choice = st.sidebar.selectbox('Choose data', list(tables.keys()))
+    table_choice = st.sidebar.selectbox('Costs', list(tables.keys()))
 
     selected_table = tables[table_choice]
 
