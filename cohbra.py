@@ -61,7 +61,7 @@ costs = pd.read_csv('costs.csv')
 
 tables = {
     'Costs': costs
-    
+     'Activity Progress': activity_progress
 }
 
 
