@@ -5,7 +5,7 @@ import altair as alt
 from datetime import datetime
 
 # Set main page title
-st.title("Progress Dashboard")
+st.title("KPI Dashboard")
 
 # Define function to create the line chart using Altair
 def create_line_chart(df, title):
