@@ -22,7 +22,7 @@ def create_line_chart(df, title):
         y=alt.Y('Actual', sort=None, title='Targets'),
         tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
     ).properties(
-        width=800  # Set the chart width to 800 pixels
+        width=1000  # Set the chart width to 1000 pixels
     )
 
     # Add target line to chart
@@ -43,7 +43,6 @@ def create_line_chart(df, title):
     st.header(title)
     # Display the table
     st.write(df)
-
 
 
 # Open image
