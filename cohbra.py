@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 from datetime import datetime
-from st_aggrid import AgGrid
+#from st_aggrid import AgGrid
 
 
 
