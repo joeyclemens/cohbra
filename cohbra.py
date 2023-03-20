@@ -3,6 +3,9 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 from datetime import datetime
+from st_aggrid import AgGrid
+
+
 
 
 # Set main page title
@@ -42,7 +45,7 @@ def create_line_chart(df, title):
     # Define the header of the table
     st.header(title)
     # Display the table
-    st.write(df)
+    AgGrid(df)
 
 
 # Open image
