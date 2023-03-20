@@ -45,7 +45,7 @@ def create_line_chart(df, title):
     # Define the header of the table
     st.header(title)
     # Display the table
-    AgGrid(df)
+    st.write(df)
 
 
 # Open image
