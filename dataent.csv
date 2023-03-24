@@ -1,70 +1,70 @@
 Room Name,Room Id,Completed,Data Entry Completed,Room loading complete,Activities completed
 Majors bay,ED001,Complete,Yes,Yes,Yes
-Minors bay,ED002,,Yes,0,Yes
-Resus Bay,ED003,,Yes,0,Yes
-Rapid access treatment (copy minors bay equipment),ED004,,Yes,0,0
-Triage,ED008,,Yes,Yes,0
-Calming and De-escalation room,ED009,,Yes,Yes,0
-Bier room: A&E,ED010,,Yes,Yes,0
-Body viewing room,ED011,,Yes,Yes,0
-Ophthalmic Exam /Treatment room,ED012,,Yes,0,0
-Plaster room: A&E,ED013,,Yes,Yes,0
-Majors bay: Paeds,ED015,,Yes,Yes,0
-Resus Bay: Paeds,ED016,,Yes,0,0
-Ultrasound,IMG009,,Yes,Yes,0
-X-ray,IMG011,,Yes,Yes,0
-MRI 3T,IMG016,,Yes,Yes,0
-MRI control room ,IMG017,,Yes,Yes,0
-MRI equipment room,IMG019,,Yes,Yes,0
-CT Scanner 128 slice,IMG020,,Yes,Yes,0
-CT Control room,IMG022,,Yes,Yes,0
-Single Bedroom,INP001,,Yes,0,Yes
-Isolation Room,INP002,,Yes,0,Yes
-4 Bed Bay,INP003,,Yes,0,Yes
-Ensuite,INP004,,Yes,0,Yes
-"Single Bedroom, Bariatric",INP005,,Yes,0,Yes
-"Ensuite, Bariatric",INP006,,Yes,0,Yes
-Isolation Lobby,INP007,,Yes,0,Yes
-Single room (Short Stay),INP008,,Yes,0,Yes
-Ensuite (Dual Assisted),INP009,,Yes,0,Yes
+Minors bay,ED002,0,Yes,0,Yes
+Resus Bay,ED003,0,Yes,0,Yes
+Rapid access treatment (copy minors bay equipment),ED004,0,Yes,0,0
+Triage,ED008,0,Yes,Yes,0
+Calming and De-escalation room,ED009,0,Yes,Yes,0
+Bier room: A&E,ED010,0,Yes,Yes,0
+Body viewing room,ED011,0,Yes,Yes,0
+Ophthalmic Exam /Treatment room,ED012,0,Yes,0,0
+Plaster room: A&E,ED013,0,Yes,Yes,0
+Majors bay: Paeds,ED015,0,Yes,Yes,0
+Resus Bay: Paeds,ED016,0,Yes,0,0
+Ultrasound,IMG009,0,Yes,Yes,0
+X-ray,IMG011,0,Yes,Yes,0
+MRI 3T,IMG016,0,Yes,Yes,0
+MRI control room ,IMG017,0,Yes,Yes,0
+MRI equipment room,IMG019,0,Yes,Yes,0
+CT Scanner 128 slice,IMG020,0,Yes,Yes,0
+CT Control room,IMG022,0,Yes,Yes,0
+Single Bedroom,INP001,0,Yes,0,Yes
+Isolation Room,INP002,0,Yes,0,Yes
+4 Bed Bay,INP003,0,Yes,0,Yes
+Ensuite,INP004,0,Yes,0,Yes
+"Single Bedroom, Bariatric",INP005,0,Yes,0,Yes
+"Ensuite, Bariatric",INP006,0,Yes,0,Yes
+Isolation Lobby,INP007,0,Yes,0,Yes
+Single room (Short Stay),INP008,0,Yes,0,Yes
+Ensuite (Dual Assisted),INP009,0,Yes,0,Yes
 Pantry (Ward),INP010,Complete,Yes,Yes,Yes
-Touchdown Base,INP011,,Yes,0,Yes
-Single Bedroom Paediatric,INP012,,Yes,0,Yes
-Day Room,INP013,,Yes,0,Yes
-Anaesthetic Room,OT001,,Yes,0,0
-Scrub,OT002,,Yes,Yes,0
-Prep,OT003,,Yes,Yes,0
-Theatre Dirty Utility,OT005,,Yes,Yes,0
-Theatre (Day Case),OT007,,Yes,0,0
-Theatre (Generic),OT010,,Yes,0,0
-Theatre (Hybrid),OT015,,Yes,0,0
-Control Room for Hybrid,OT017,,Yes,Yes,0
-Sterile Store,OT023,,Yes,0,0
-Equipment Store,OT025,,Yes,Yes,0
-Pre-op bay,OT026,,Yes,Yes,0
-Medi-room,OT027,,Yes,Yes,0
-PACU Recovery bay,OT028,,Yes,Yes,0
-"2nd Stage Recovery Bay, 4 patient",OT029,,Yes,Yes,0
-Patient Bed wait,OT030,,Yes,Yes,0
-PACU Recovery bay twin,OT031,,Yes,Yes,0
-PACU Staff base,OT032,,Yes,Yes,0
-Consult / Examination Room (single sided couch access),OUT001,,Yes,0,Yes
-Consult / Examination Room (double sided couch access),OUT002,,Yes,0,Yes
-Treatment room: double-sided couch access ,OUT003,,Yes,0,Yes
-Physical measurement room,OUT004,,Yes,Yes,0
-Phlebotomy,OUT005,,Yes,Yes,0
-Treatment room: ENT,OUT017,,Yes,0,0
-Ophthalmic test room,OUT030,,Yes,0,0
+Touchdown Base,INP011,0,Yes,0,Yes
+Single Bedroom Paediatric,INP012,0,Yes,0,Yes
+Day Room,INP013,0,Yes,0,Yes
+Anaesthetic Room,OT001,0,Yes,0,0
+Scrub,OT002,0,Yes,Yes,0
+Prep,OT003,0,Yes,Yes,0
+Theatre Dirty Utility,OT005,0,Yes,Yes,0
+Theatre (Day Case),OT007,0,Yes,0,0
+Theatre (Generic),OT010,0,Yes,0,0
+Theatre (Hybrid),OT015,0,Yes,0,0
+Control Room for Hybrid,OT017,0,Yes,Yes,0
+Sterile Store,OT023,0,Yes,0,0
+Equipment Store,OT025,0,Yes,Yes,0
+Pre-op bay,OT026,0,Yes,Yes,0
+Medi-room,OT027,0,Yes,Yes,0
+PACU Recovery bay,OT028,0,Yes,Yes,0
+"2nd Stage Recovery Bay, 4 patient",OT029,0,Yes,Yes,0
+Patient Bed wait,OT030,0,Yes,Yes,0
+PACU Recovery bay twin,OT031,0,Yes,Yes,0
+PACU Staff base,OT032,0,Yes,Yes,0
+Consult / Examination Room (single sided couch access),OUT001,0,Yes,0,Yes
+Consult / Examination Room (double sided couch access),OUT002,0,Yes,0,Yes
+Treatment room: double-sided couch access ,OUT003,0,Yes,0,Yes
+Physical measurement room,OUT004,0,Yes,Yes,0
+Phlebotomy,OUT005,0,Yes,Yes,0
+Treatment room: ENT,OUT017,0,Yes,0,0
+Ophthalmic test room,OUT030,0,Yes,0,0
 Clean Store (Inpatient),WHO001,Complete,Yes,Yes,Yes
 Dirty Utility (Inpatient),WHO002,Complete,Yes,Yes,Yes
 Clean store (Outpatient),WHO003,Complete,Yes,Yes,Yes
 Medicine prep room,WHO004,Complete,Yes,Yes,Yes
-Interview room,WHO005,,Yes,Yes,0
-Multi Functional Team Room (MFTR),WHO007,,Yes,Yes,0
-Cleaners room,WHO008,,Yes,Yes,0
-Staff Rest Inc Beverage bay  ,WHO024,,Yes,0,0
-Staff Shower ,WHO025,,Yes,0,0
-Waiting Area ,WHO026,,Yes,0,0
-WC,WHO027,,Yes,Yes,0
-Baby Care (Breast Feeding),WHO029,,Yes,Yes,0
-Dirty Utility (Outpatient),WHO035,,Yes,Yes,0
+Interview room,WHO005,0,Yes,Yes,0
+Multi Functional Team Room (MFTR),WHO007,0,Yes,Yes,0
+Cleaners room,WHO008,0,Yes,Yes,0
+Staff Rest Inc Beverage bay  ,WHO024,0,Yes,0,0
+Staff Shower ,WHO025,0,Yes,0,0
+Waiting Area ,WHO026,0,Yes,0,0
+WC,WHO027,0,Yes,Yes,0
+Baby Care (Breast Feeding),WHO029,0,Yes,Yes,0
+Dirty Utility (Outpatient),WHO035,0,Yes,Yes,0
