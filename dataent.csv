@@ -9,10 +9,10 @@ Bier room: A&E,ED010,,Yes,Yes,0
 Body viewing room,ED011,,Yes,Yes,0
 Ophthalmic Exam /Treatment room,ED012,,Yes,0,0
 Plaster room: A&E,ED013,,Yes,Yes,0
-Majors bay: Paeds,ED015,Complete,Yes,Yes,0
+Majors bay: Paeds,ED015,,Yes,Yes,0
 Resus Bay: Paeds,ED016,,Yes,0,0
-Ultrasound,IMG009,Complete,Yes,Yes,0
-X-ray,IMG011,Complete,Yes,Yes,0
+Ultrasound,IMG009,,Yes,Yes,0
+X-ray,IMG011,,Yes,Yes,0
 MRI 3T,IMG016,,Yes,Yes,0
 MRI control room ,IMG017,,Yes,Yes,0
 MRI equipment room,IMG019,,Yes,Yes,0
