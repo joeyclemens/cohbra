@@ -32,15 +32,15 @@ Touchdown Base,INP011,
 Single Bedroom Paediatric,INP012,
 Day Room,INP013,
 Anaesthetic Room,OT001,
-Scrub,OT002,
-Prep,OT003,
+Scrub,OT002,Complete
+Prep,OT003,Complete
 Theatre Dirty Utility,OT005,
 Theatre (Day Case),OT007,
 Theatre (Generic),OT010,
 Theatre (Hybrid),OT015,
 Control Room for Hybrid,OT017,
 Sterile Store,OT023,
-Equipment Store,OT025,
+Equipment Store,OT025,Complete
 Pre-op bay,OT026,
 Medi-room,OT027,
 PACU Recovery bay,OT028,
@@ -54,17 +54,17 @@ Treatment room: double-sided couch access ,OUT003,
 Physical measurement room,OUT004,
 Phlebotomy,OUT005,
 Treatment room: ENT,OUT017,
-Ophthalmic test room,OUT030,
+Ophthalmic test room,OUT030,Complete
 Clean Store (Inpatient),WHO001,Complete
 Dirty Utility (Inpatient),WHO002,Complete
 Clean store (Outpatient),WHO003,Complete
 Medicine prep room,WHO004,Complete
-Interview room,WHO005,
-Multi Functional Team Room (MFTR),WHO007,
-Cleaners room,WHO008,
+Interview room,WHO005,Complete
+Multi Functional Team Room (MFTR),WHO007,Complete
+Cleaners room,WHO008,Complete
 Staff Rest Inc Beverage bay  ,WHO024,
 Staff Shower ,WHO025,
 Waiting Area ,WHO026,
-WC,WHO027,
-Baby Care (Breast Feeding),WHO029,
-Dirty Utility (Outpatient),WHO035,
+WC,WHO027,Complete
+Baby Care (Breast Feeding),WHO029,Complete
+Dirty Utility (Outpatient),WHO035,Complete

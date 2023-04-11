@@ -32,15 +32,15 @@ Touchdown Base,INP011,,Yes,0,Yes
 Single Bedroom Paediatric,INP012,,Yes,0,Yes
 Day Room,INP013,,Yes,0,Yes
 Anaesthetic Room,OT001,,Yes,0,0
-Scrub,OT002,,Yes,Yes,0
-Prep,OT003,,Yes,Yes,0
+Scrub,OT002,Complete,Yes,Yes,Yes
+Prep,OT003,Complete,Yes,Yes,Yes
 Theatre Dirty Utility,OT005,,Yes,Yes,0
 Theatre (Day Case),OT007,,Yes,0,0
 Theatre (Generic),OT010,,Yes,0,0
 Theatre (Hybrid),OT015,,Yes,0,0
 Control Room for Hybrid,OT017,,Yes,Yes,0
 Sterile Store,OT023,,Yes,0,0
-Equipment Store,OT025,,Yes,Yes,0
+Equipment Store,OT025,Complete,Yes,Yes,Yes
 Pre-op bay,OT026,,Yes,Yes,0
 Medi-room,OT027,,Yes,Yes,0
 PACU Recovery bay,OT028,,Yes,Yes,0
@@ -54,17 +54,17 @@ Treatment room: double-sided couch access ,OUT003,,Yes,Yes,Yes
 Physical measurement room,OUT004,,Yes,Yes,0
 Phlebotomy,OUT005,,Yes,Yes,0
 Treatment room: ENT,OUT017,,Yes,Yes,0
-Ophthalmic test room,OUT030,,Yes,Yes,0
+Ophthalmic test room,OUT030,Complete,Yes,Yes,Yes
 Clean Store (Inpatient),WHO001,Complete,Yes,Yes,Yes
 Dirty Utility (Inpatient),WHO002,Complete,Yes,Yes,Yes
 Clean store (Outpatient),WHO003,Complete,Yes,Yes,Yes
 Medicine prep room,WHO004,Complete,Yes,Yes,Yes
-Interview room,WHO005,,Yes,Yes,0
-Multi Functional Team Room (MFTR),WHO007,,Yes,Yes,0
-Cleaners room,WHO008,,Yes,Yes,0
+Interview room,WHO005,Complete,Yes,Yes,Yes
+Multi Functional Team Room (MFTR),WHO007,Complete,Yes,Yes,Yes
+Cleaners room,WHO008,Complete,Yes,Yes,Yes
 Staff Rest Inc Beverage bay  ,WHO024,,Yes,0,0
 Staff Shower ,WHO025,,Yes,0,0
 Waiting Area ,WHO026,,Yes,0,0
-WC,WHO027,,Yes,Yes,0
-Baby Care (Breast Feeding),WHO029,,Yes,Yes,0
-Dirty Utility (Outpatient),WHO035,,Yes,Yes,0
+WC,WHO027,Complete,Yes,Yes,Yes
+Baby Care (Breast Feeding),WHO029,Complete,Yes,Yes,Yes
+Dirty Utility (Outpatient),WHO035,Complete,Yes,Yes,Yes
