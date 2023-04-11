@@ -39,7 +39,7 @@ Theatre (Day Case),OT007,,Yes,0,0
 Theatre (Generic),OT010,,Yes,0,0
 Theatre (Hybrid),OT015,,Yes,0,0
 Control Room for Hybrid,OT017,,Yes,Yes,0
-Sterile Store,OT023,,0,0,0
+Sterile Store,OT023,,Yes,0,0
 Equipment Store,OT025,,Yes,Yes,0
 Pre-op bay,OT026,,Yes,Yes,0
 Medi-room,OT027,,Yes,Yes,0
@@ -53,8 +53,8 @@ Consult / Examination Room (double sided couch access),OUT002,,Yes,Yes,Yes
 Treatment room: double-sided couch access ,OUT003,,Yes,Yes,Yes
 Physical measurement room,OUT004,,Yes,Yes,0
 Phlebotomy,OUT005,,Yes,Yes,0
-Treatment room: ENT,OUT017,,Yes,0,0
-Ophthalmic test room,OUT030,,Yes,0,0
+Treatment room: ENT,OUT017,,Yes,Yes,0
+Ophthalmic test room,OUT030,,Yes,Yes,0
 Clean Store (Inpatient),WHO001,Complete,Yes,Yes,Yes
 Dirty Utility (Inpatient),WHO002,Complete,Yes,Yes,Yes
 Clean store (Outpatient),WHO003,Complete,Yes,Yes,Yes
