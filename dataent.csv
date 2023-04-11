@@ -4,9 +4,9 @@ Minors bay,ED002,,Yes,0,Yes
 Resus Bay,ED003,,Yes,0,Yes
 Rapid access treatment (copy minors bay equipment),ED004,,Yes,0,0
 Triage,ED008,,Yes,Yes,0
-Calming and De-escalation room,ED009,,Yes,Yes,0
-Bier room: A&E,ED010,,Yes,Yes,0
-Body viewing room,ED011,,Yes,Yes,0
+Calming and De-escalation room,ED009,Complete,Yes,Yes,Yes
+Bier room: A&E,ED010,Complete,Yes,Yes,Yes
+Body viewing room,ED011,Complete,Yes,Yes,Yes
 Ophthalmic Exam /Treatment room,ED012,,Yes,0,0
 Plaster room: A&E,ED013,,Yes,Yes,0
 Majors bay: Paeds,ED015,,Yes,Yes,0
@@ -17,7 +17,7 @@ MRI 3T,IMG016,,Yes,Yes,0
 MRI control room ,IMG017,,Yes,Yes,0
 MRI equipment room,IMG019,,Yes,Yes,0
 CT Scanner 128 slice,IMG020,,Yes,Yes,0
-CT Control room,IMG022,,Yes,Yes,0
+CT Control room,IMG022,Complete,Yes,Yes,Yes
 Single Bedroom,INP001,,Yes,0,Yes
 Isolation Room,INP002,,Yes,0,Yes
 4 Bed Bay,INP003,,Yes,0,Yes
