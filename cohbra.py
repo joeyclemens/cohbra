@@ -68,9 +68,8 @@ costs_to_do = pd.read_csv('costs_to_do.csv')
     
 tables = {
     'Priority Rooms':priority,
-    'Costs': costs,
     'Total Costs' : cost_total,
-    'costs to do' : costs_to_do
+    'Costs' : costs_to_do
 }
 
 
