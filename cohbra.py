@@ -63,11 +63,12 @@ cost_progress = pd.read_csv('cost_progress.csv')
 ###################
 priority = pd.read_csv('dataent.csv')
 costs = pd.read_csv('costs.csv')
+cost_total = pd.read_csv('cost_progress_total.csv')
 
 tables = {
     'Priority Rooms':priority,
     'Costs': costs,
-    
+    'Total Costs' : cost_total
 }
 
 
