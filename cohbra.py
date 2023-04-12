@@ -56,7 +56,7 @@ st.image(image)
 
 # Load data from CSV files
 total_progress = pd.read_csv('total_progress.csv')
-total_progress_with_specs_and_cost = pd.read_csv('total_progress_with_specs_and_cost.csv')
+total_progress_with_specs_and_cost = pd.read_csv('total_progress with specs and cost.csv')
 dataentry_progress = pd.read_csv('dataentry_progress.csv')
 roomloading_progress = pd.read_csv('roomloading_progress.csv')
 activity_progress = pd.read_csv('activity_progress.csv')
