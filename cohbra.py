@@ -85,8 +85,8 @@ if option == 'Charts':
         'Equipment Planning Progress': dataentry_progress,
         'Room Loading Progress': roomloading_progress,
         'Activity Progress': activity_progress,
-        'Cost Progress': cost_progress,
-        'Total Costs' : cost_total
+        'Cost left to do': cost_progress,
+        'Rooms with all costs done' : cost_total
     }
 
     chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
