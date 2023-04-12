@@ -70,7 +70,7 @@ tables = {
     'Priority Rooms':priority,
     'Costs': costs,
     'Total Costs' : cost_total,
-    'Costs_to_do' : costs_to_do
+    'costs_to_do' : costs_to_do
 }
 
 
