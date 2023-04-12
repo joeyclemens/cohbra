@@ -56,6 +56,7 @@ st.image(image)
 
 # Load data from CSV files
 total_progress = pd.read_csv('total_progress.csv')
+total_progress_with_specs_and_cost = pd.read_csv('total_progress_with_specs_and_cost.csv')
 dataentry_progress = pd.read_csv('dataentry_progress.csv')
 roomloading_progress = pd.read_csv('roomloading_progress.csv')
 activity_progress = pd.read_csv('activity_progress.csv')
@@ -65,6 +66,8 @@ priority = pd.read_csv('dataent.csv')
 costs = pd.read_csv('costs.csv')
 cost_total = pd.read_csv('cost_progress_total.csv')
 costs_to_do = pd.read_csv('costs_to_do.csv')
+
+
     
 tables = {
     'Priority Rooms':priority,
@@ -81,7 +84,8 @@ option = st.sidebar.selectbox('Select an option',
 
 if option == 'Charts':
     charts = {
-        'Total Progress': total_progress,
+        'Total Progress minus specs and cost': total_progress,
+        'Total Progress with specs and cost': total_progress_with_specs_and_cost,
         'Equipment Planning Progress': dataentry_progress,
         'Room Loading Progress': roomloading_progress,
         'Activity Progress': activity_progress,
