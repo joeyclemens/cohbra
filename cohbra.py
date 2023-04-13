@@ -106,13 +106,17 @@ if option == 'Charts':
     create_line_chart(selected_chart, chart_choice)
 
 elif option == 'Tables':
+    # Define a function to apply CSS styling to the first row of the table
+def highlight_first_row(s):
+    return ['background-color: yellow' if i == 0 else '' for i in range(len(s))]
     table_choice = st.sidebar.selectbox('Choose Table', list(tables.keys()))
     selected_table = tables[table_choice]
         
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
     
-    st.table(selected_table)
+    st.table(selected_table(overall.style.apply(highlight_first_row, axis=1)))
     
+
 
 
  
