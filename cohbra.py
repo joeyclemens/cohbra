@@ -112,6 +112,12 @@ elif option == 'Tables':
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
     
     st.table(selected_table)
+    # Define a function to apply CSS styling to the table
+def highlight_rows(s):
+    return ['background-color: yellow' if i % 2 == 0 else '' for i in range(len(s))]
+
+# Apply the function to the dataframe and display the table
+st.write(df.style.apply(highlight_rows, axis=1))
 
 
  
