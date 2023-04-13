@@ -55,6 +55,7 @@ image = Image.open('MJMEDICAL.png')
 st.image(image)
 
 # Load data from CSV files
+total_progress = pd.read_csv('progress/total_progress.csv')
 total_progress_with_specs_and_cost = pd.read_csv('progress/total_progress with specs and cost.csv')
 dataentry_progress = pd.read_csv('progress/dataentry_progress.csv')
 roomloading_progress = pd.read_csv('progress/roomloading_progress.csv')
@@ -70,10 +71,9 @@ spec_progress = pd.read_csv('progress/spec_progress.csv')
 spec_room_progress = pd.read_csv('progress/spec_room_progress.csv')
 
 
-
     
 tables = {
-   
+    
     'Priority Rooms':priority,
     'Costs' : costs_to_do,
     'Specs' : specs
@@ -88,7 +88,7 @@ option = st.sidebar.selectbox('Select an option',
 
 if option == 'Charts':
     charts = {
-      
+        'Total Room Progress minus specs and cost': total_progress,
         'Total Room Progress (Equipment, Room loading, Activities, Specs and Costs)': total_progress_with_specs_and_cost,
         'Equipment Planning Progress': dataentry_progress,
         'Room Loading Progress': roomloading_progress,
