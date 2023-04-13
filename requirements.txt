@@ -1,0 +1,2 @@
+streamlit==1.21.0
+streamlit-aggrid==29.2.0
