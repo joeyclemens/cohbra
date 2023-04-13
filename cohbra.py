@@ -85,7 +85,7 @@ option = st.sidebar.selectbox('Select an option',
 if option == 'Charts':
     charts = {
         'Total Progress minus specs and cost': total_progress,
-        'Total Progress with specs and cost': total_progress_with_specs_and_cost,
+        'Total Room Progress (Equipment, Room loading, Activities, Specs and Costs': total_progress_with_specs_and_cost,
         'Equipment Planning Progress': dataentry_progress,
         'Room Loading Progress': roomloading_progress,
         'Activity Progress': activity_progress,
