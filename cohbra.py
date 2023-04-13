@@ -114,7 +114,7 @@ elif option == 'Tables':
 
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 
-    st.table(selected_table(overall.style.apply(highlight_first_row, axis=1)))
+    st.table(selected_table)
 
 
 
