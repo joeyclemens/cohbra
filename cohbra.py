@@ -112,7 +112,7 @@ elif option == 'Tables':
 
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 
-   AgGrid(selected_table)
+AgGrid(selected_table)
 
 
 
