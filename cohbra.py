@@ -61,14 +61,14 @@ dataentry_progress = pd.read_csv('progress/dataentry_progress.csv')
 roomloading_progress = pd.read_csv('progress/roomloading_progress.csv')
 activity_progress = pd.read_csv('progress/activity_progress.csv')
 cost_progress = pd.read_csv('progress/cost_progress.csv')
-spec_progress = pd.read_csv('progress/spec_progress.csv')
-spec_room_progress = pd.read_csv('progress/spec_room_progress.csv')
 ###################
 priority = pd.read_csv('dataent.csv')
 costs = pd.read_csv('costs.csv')
 cost_total = pd.read_csv('cost_progress_total.csv')
 costs_to_do = pd.read_csv('costs_to_do.csv')
 specs = pd.read_csv('specs.csv')
+spec_progress = pd.read_csv('progress/spec_progress.csv')
+spec_room_progress = pd.read_csv('progress/spec_room_progress.csv')
 total = pd.read_csv =('total.csv')
 
 
@@ -77,7 +77,7 @@ tables = {
     'Total' : total,
     'Priority Rooms':priority,
     'Costs' : costs_to_do,
-    'Specs' : specs,
+    'Specs' : specs
 }
 
 
