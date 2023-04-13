@@ -68,6 +68,7 @@ cost_total = pd.read_csv('cost_progress_total.csv')
 costs_to_do = pd.read_csv('costs_to_do.csv')
 specs = pd.read_csv('specs.csv')
 spec_progress = pd.read_csv('progress/spec_progress.csv')
+spec_room_progress = pd.read_csv('progress/spec_room_progress.csv')
 
 
     
@@ -86,14 +87,15 @@ option = st.sidebar.selectbox('Select an option',
 
 if option == 'Charts':
     charts = {
-        'Total Progress minus specs and cost': total_progress,
+        'Total Room Progress minus specs and cost': total_progress,
         'Total Room Progress (Equipment, Room loading, Activities, Specs and Costs)': total_progress_with_specs_and_cost,
         'Equipment Planning Progress': dataentry_progress,
         'Room Loading Progress': roomloading_progress,
         'Activity Progress': activity_progress,
         'Cost left to do': cost_progress,
         'Rooms with all costs done' : cost_total,
-        'Specs' : spec_progress
+        'Specs' : spec_progress,
+        'Rooms with all specs done' : spec_room_progress
     }
 
     chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
