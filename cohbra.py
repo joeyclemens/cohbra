@@ -69,12 +69,12 @@ costs_to_do = pd.read_csv('costs_to_do.csv')
 specs = pd.read_csv('specs.csv')
 spec_progress = pd.read_csv('progress/spec_progress.csv')
 spec_room_progress = pd.read_csv('progress/spec_room_progress.csv')
-total = pd.read_csv =('total.csv')
+overall = pd.read_csv =('total.csv')
 
 
     
 tables = {
-    'Total' : total,
+    'Total' : overall,
     'Priority Rooms':priority,
     'Costs' : costs_to_do,
     'Specs' : specs
