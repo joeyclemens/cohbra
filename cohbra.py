@@ -74,9 +74,9 @@ overall = pd.read_csv('overall.csv')
     
 tables = {
     'Total Room completion' :overall,
-    'Priority Rooms':priority,
     'Costs' : costs_to_do,
-    'Specs' : specs
+    'Specs' : specs,
+    'Priority Rooms':priority
 }
 
 
