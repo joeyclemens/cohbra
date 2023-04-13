@@ -111,11 +111,11 @@ elif option == 'Tables':
     return ['background-color: yellow' if i == 0 else '' for i in range(len(s))]
     table_choice = st.sidebar.selectbox('Choose Table', list(tables.keys()))
     selected_table = tables[table_choice]
-        
+
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
-    
+
     st.table(selected_table(overall.style.apply(highlight_first_row, axis=1)))
-    
+
 
 
 
