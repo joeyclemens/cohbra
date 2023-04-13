@@ -1,2 +1,2 @@
-AgGrid
-streamlit
+streamlit==1.16.0
+streamlit-aggrid==0.3.3
