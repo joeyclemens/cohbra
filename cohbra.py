@@ -114,8 +114,8 @@ elif option == 'Tables':
 
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 # Apply the function to the dataframe and display the table
-    st.write(overall.style.apply(highlight_first_row, axis=1))
-    st.table(selected_table)
+    
+    st.table(selected_table.apply(highlight_first_row, axis=1))
 
 
 
