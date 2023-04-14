@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 from datetime import datetime
-#from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 
 
@@ -70,10 +70,11 @@ specs = pd.read_csv('specs.csv')
 spec_progress = pd.read_csv('progress/spec_progress.csv')
 spec_room_progress = pd.read_csv('progress/spec_room_progress.csv')
 overall = pd.read_csv('overall.csv')
+overall_header = pd.read_csv('overall_header.csv')
 
     
 tables = {
-    'Total Room completion' :overall,
+    'Total Room completion' : [overall_header, overall],
     'Costs' : costs_to_do,
     'Specs' : specs,
     'Priority Rooms':priority
@@ -112,7 +113,7 @@ elif option == 'Tables':
 
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 
-    st.table(selected_table)
+    AgGrid(selected_table)
 
 
 
