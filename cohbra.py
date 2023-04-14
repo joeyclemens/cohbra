@@ -74,7 +74,7 @@ overall_header = pd.read_csv('overall_header.csv')
 
     
 tables = {
-    'Total Room completion' : [overall_header, overall],
+    'Total Room completion' : [overall],
     'Costs' : costs_to_do,
     'Specs' : specs,
     'Priority Rooms':priority
