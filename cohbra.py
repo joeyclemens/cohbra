@@ -113,7 +113,7 @@ elif option == 'Tables':
 
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 
-    st.write(selected_table)
+    st.table(selected_table)
 
 
 
