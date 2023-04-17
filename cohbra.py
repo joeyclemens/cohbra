@@ -125,5 +125,5 @@ elif option == 'Tables':
 # Add a dividing line
 st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 # Add textbox to sidebar
-st.sidebar.markdown("<u>Areas needing most attention:</u>\n- Activities\n- Specs", unsafe_allow_html=True)
+st.sidebar.markdown("<u>Areas needing most attention:</u>\n- Specs", unsafe_allow_html=True)
  
