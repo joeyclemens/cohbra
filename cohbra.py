@@ -116,6 +116,6 @@ elif option == 'Tables':
     st.table(selected_table)
 
 
-
-
+# Add underlined text to sidebar
+st.sidebar.markdown("<u>Areas needing most attention:</u>\n- Activities\n- Specs", unsafe_allow_html=True)
  
