@@ -5,7 +5,7 @@ AID9003,Azure Heel Protector (AZ401) - Infant / Adolescent / Adult - 190 x 175 x
 AID9004,"AID, positioning, arm protectors",,
 AID9005,"AID, positioning, Omnidirectional Tube Support",,
 AID9007,Azure Head Protector (AZ100) - Infant / Adolescent / Adult - 260 x 250 x 50mm,,
-AID9007a,Oasis Elite Open Head Ring (EL022) - Adult - 200 x 50mm,,
+AID9007a,Oasis Elite Open Head Ring (EL022) - Adult - Ø200 x 50mm,,
 AID9008,"AID, positioning, closed head ring",,
 ANA001,"ANAESTHETIC MACHINE/WORKSTATION electrically powered piston ventilator, mobile, 1350H 750W 650D",07/03/23 v0.1,Done
 ANA004,"ANAESTHETIC MACHINE/WORKSTATION with ventilator, with accessories and PC, mobile, 1580H 565W 695D",07/03/23 v0.1,Done
@@ -35,7 +35,7 @@ BHD-14,"BEDHEAD SERVICES A&E Treatment Bay/Room (BED040 x1, BED9127 x1, OUT010 x
 BIN003,"BIN, disposal, general purpose, liner, mobile",,
 BIN9000,"BIN, sanitary towel disposal",17/04/19 v0.1,
 BIN9004,"BIN, small, 30 Ltr , approx 640H 340W 210D",,
-BIN9005,"BIN, medium, 70 Ltr , approx 875H 430W 385D",,
+BIN9005,"BIN, medium, 70 Ltr , approx 875H 430W 385D",12/04/2023 v0.1,Done
 BLI9002,"BLIND, laser type, to suit window",17/04/19 v0.1,
 BOA006,"BOARD, marker, whiteboard, dry-wipe, with pen holder, wall mounted, 1200H1800W",07/03/23 v0.1,Done
 BOA034,"BOARD, marker, whiteboard, dry-wipe, with pen holder, wall mounted, 600H 900W",07/03/23 v0.1,Done
@@ -43,9 +43,9 @@ BOA037,"BOARD, marker, whiteboard, dry-wipe, with pen holder, wall mounted, 900H
 BOA9008,"BOARD, marker, whiteboard, dry-wipe, magnetic, with pen holder, patient information, wall mounted, 450H 600W",10/03/2023 v0.1,Done
 BOA9010,"BOARD, swabs/sharps count, fluid loss, 1200H 1800W",10/03/2023 v0.1,Done
 BRA9000,"BRACKET, sharps bin, wall mounted",17/04/19 v0.1,
-BRA9006,"BRACKET, Pat slide, wall mounted",v0.1,
+BRA9006,"BRACKET, Pat slide, wall mounted",v0.1,Done
 BRA9007,"BRACKET, wall mounted, for vital signs monitor",10/03/2023 v0.1,Done
-BRA9014,"BRACKET, for patient vital signs slave monitor, wall mounted",,
+BRA9014,"BRACKET, for patient vital signs slave monitor, wall mounted",17/04/23 v0.1,Done
 BUC003,"BUCKET, plaster, with stand, mobile, 900H 300 dia.",,
 CAB-01,"CABINET, lotion, 48x1 litre heated with connection unit (CAB036 x1, OUT052 x1)",,
 CAB030,"CABINET warming, blankets, stainless steel, 21 cuft",07/03/23 v0.1,Done
@@ -71,15 +71,15 @@ CHA301,"CHAIR, swivel, height adjustable, high back, with arms, wipeable, 5 star
 CHA304,"CHAIR, swivel, height adjustable, medium back, wipeable, 5 star base, on glides",,
 CHA306,"CHAIR, easy, low back, with open arms, upholstered, wipeable",,
 CHA307,"CHAIR, easy, high back, with open arms, upholstered, wipeable",17/04/19 v0.1,
-CHA317,"CHAIR, upright, upholstered, stacking, wipeable",17/04/19 v0.1,
-CHA318,"CHAIR, upright, with arms, upholstered, stacking, wipeable",,
-CHA323,"CHAIR, upright, wood, wipeable.",,
-CHA324,"CHAIR, anaesthetist, wipeable, height adjustable.",V0.1,
-CHA338,"SANI-CHAIR/COMMODE, tubular, metal, wipeable, mobile.",17/04/19 v0.1,
+CHA317,"CHAIR, upright, upholstered, stacking, wipeable",17/04/23 v0.1,Done
+CHA318,"CHAIR, upright, with arms, upholstered, stacking, wipeable",17/04/23 v0.1,Done
+CHA323,"CHAIR, upright, wood, wipeable.",17/04/23 v0.1,Done
+CHA324,"CHAIR, anaesthetist, wipeable, height adjustable.",17/04/23 v0.1,Done
+CHA338,"SANI-CHAIR/COMMODE, tubular, metal, wipeable, mobile.",17/04/23 v0.1,Done
 CHA356,"CHAIR, venepuncture, wipeable.",10/03/2023 v0.1,Done
-CHA367,"UNIT CHAIR, 1 seater, with arms, upholstered, wipeable",,
+CHA367,"UNIT CHAIR, 1 seater, with arms, upholstered, wipeable",17/04/23 v0.1,Done
 CHA375,"CHAIR, ENT patient, swivel seat, height adjustable, backrest, headrest, folding armrests, wipeable.",10/03/2023 v0.1,Done
-CHA378,"UNIT CHAIR, easy, with arms, fully upholstered, wipeable,",,
+CHA378,"UNIT CHAIR, easy, with arms, fully upholstered, wipeable,",17/04/2023 v0.1,Done
 CHA379,"UNIT CHAIR/SETTEE, 2 seater, easy, with arms, fully upholstered, wipeable.",,
 CHA383,"CHAIR, stacking, polypropylene, with back and seat pads, wipeable.",,
 CHA391,"CHAIR, easy, reclining, wipeable",17/04/19 v0.1,
@@ -456,3 +456,11 @@ XRA043,"X-RAY UNIT (tube), with ceiling suspensions track - digital",17/04/19 v0
 XRA045,X-RAY CHEST stand - digital,,
 XRA048,X-RAY CONTROL CONSOLE - digital,,
 XRA-07,"X-Ray, Digital, Generator Cabinet and outlet (XRA049 x1, OUT9012 x1)",,
+MON-14,"Monitor, vital signs , bp, temp, oxygen saturation on trolley",,
+PAT-02,"PATIENT SLIDE, with bracket",,
+COM-12,"COMPUTER, thin client, twin screen (COM9007 x 1, COM9015 x 1, COM033 x 1, BRA9011 x1, TEL9001 x 1)",,
+SHE222,"SHELF, 1200W 400D",,
+SMC051,"CABINET, tall, modular storage, for 600 facing inserts, open, on plinth, 2100H",,
+SMF011,"SHELVING FRAME, modular storage, 1 bay, with 5 shelves, 2130H 1000W 465D",,
+SMF013,"SHELVING FRAME, modular storage, 1 bay, with 5 shelves, 2130H 1000W 665D",,
+STO008,"STOOL, kick, retractable castors",,
