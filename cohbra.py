@@ -82,6 +82,13 @@ tables = {
 
 
 
+# Add textbox to sidebar
+# Add textbox to sidebar
+st.sidebar.markdown("<u>Links:</u>", unsafe_allow_html=True)
+# Add hyperlink to sidebar
+st.sidebar.write("[KPI Tracker](https://mjmedical.sharepoint.com/:x:/s/COHBRA/Eb4o_yhqVspHjEDxC7hptYYBy4ryOXYl8nmXwHW0wT12Vw?e=tzJZid)")
+# Add a dividing line
+st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 
 # Add selectbox to choose which graph and table to show
 option = st.sidebar.selectbox('Select an option',
@@ -115,7 +122,8 @@ elif option == 'Tables':
 
     st.table(selected_table)
 
-
+# Add a dividing line
+st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 # Add textbox to sidebar
 st.sidebar.markdown("<u>Areas needing most attention:</u>\n- Activities\n- Specs", unsafe_allow_html=True)
  
