@@ -1,59 +1,59 @@
 Room Name,Room Id,Completed,Data Entry Completed,Room loading complete,Activities completed
 Majors bay,ED001,Complete,Yes,Yes,Yes
-Minors bay,ED002,-,Yes,-,Yes
-Resus Bay,ED003,-,Yes,-,Yes
-Rapid access treatment (copy minors bay equipment),ED004,-,Yes,-,-
-Triage,ED008,-,Yes,Yes,-
+Minors bay,ED002,,Yes,,Yes
+Resus Bay,ED003,,Yes,,Yes
+Rapid access treatment (copy minors bay equipment),ED004,,Yes,,
+Triage,ED008,,Yes,Yes,
 Calming and De-escalation room,ED009,Complete,Yes,Yes,Yes
 Bier room: A&E,ED010,Complete,Yes,Yes,Yes
 Body viewing room,ED011,Complete,Yes,Yes,Yes
-Ophthalmic Exam /Treatment room,ED012,-,Yes,-,-
-Plaster room: A&E,ED013,-,Yes,Yes,-
-Majors bay: Paeds,ED015,-,Yes,Yes,-
-Resus Bay: Paeds,ED016,-,Yes,-,-
-Ultrasound,IMG009,-,Yes,Yes,-
-X-ray,IMG011,-,Yes,Yes,-
-MRI 3T,IMG016,-,Yes,Yes,-
-MRI control room ,IMG017,-,Yes,Yes,-
-MRI equipment room,IMG019,-,Yes,Yes,-
-CT Scanner 128 slice,IMG020,-,Yes,Yes,-
+Ophthalmic Exam /Treatment room,ED012,,Yes,,
+Plaster room: A&E,ED013,,Yes,,
+Majors bay: Paeds,ED015,,Yes,,
+Resus Bay: Paeds,ED016,,Yes,,
+Ultrasound,IMG009,,Yes,Yes,
+X-ray,IMG011,,Yes,Yes,
+MRI 3T,IMG016,,Yes,Yes,
+MRI control room ,IMG017,,Yes,Yes,
+MRI equipment room,IMG019,,Yes,Yes,
+CT Scanner 128 slice,IMG020,,Yes,Yes,
 CT Control room,IMG022,Complete,Yes,Yes,Yes
-Single Bedroom,INP001,-,Yes,-,Yes
-Isolation Room,INP002,-,Yes,-,Yes
-4 Bed Bay,INP003,-,Yes,-,Yes
-Ensuite,INP004,-,Yes,-,Yes
-"Single Bedroom, Bariatric",INP005,-,Yes,-,Yes
-"Ensuite, Bariatric",INP006,-,Yes,-,Yes
-Isolation Lobby,INP007,-,Yes,-,Yes
-Single room (Short Stay),INP008,-,Yes,-,Yes
-Ensuite (Dual Assisted),INP009,-,Yes,-,Yes
+Single Bedroom,INP001,,Yes,,Yes
+Isolation Room,INP002,,Yes,,Yes
+4 Bed Bay,INP003,,Yes,,Yes
+Ensuite,INP004,,Yes,,Yes
+"Single Bedroom, Bariatric",INP005,,Yes,,Yes
+"Ensuite, Bariatric",INP006,,Yes,,Yes
+Isolation Lobby,INP007,,Yes,,Yes
+Single room (Short Stay),INP008,,Yes,,Yes
+Ensuite (Dual Assisted),INP009,,Yes,,Yes
 Pantry (Ward),INP010,Complete,Yes,Yes,Yes
-Touchdown Base,INP011,-,Yes,-,Yes
-Single Bedroom Paediatric,INP012,-,Yes,-,Yes
-Day Room,INP013,-,Yes,-,Yes
-Anaesthetic Room,OT001,-,Yes,-,-
+Touchdown Base,INP011,,Yes,,Yes
+Single Bedroom Paediatric,INP012,,Yes,,Yes
+Day Room,INP013,,Yes,,Yes
+Anaesthetic Room,OT001,,Yes,,
 Scrub,OT002,Complete,Yes,Yes,Yes
 Prep,OT003,Complete,Yes,Yes,Yes
-Theatre Dirty Utility,OT005,-,Yes,Yes,-
-Theatre (Day Case),OT007,-,Yes,-,-
-Theatre (Generic),OT010,-,Yes,-,-
-Theatre (Hybrid),OT015,-,Yes,-,-
-Control Room for Hybrid,OT017,-,Yes,Yes,-
-Sterile Store,OT023,-,Yes,-,-
+Theatre Dirty Utility,OT005,,Yes,Yes,
+Theatre (Day Case),OT007,,Yes,,
+Theatre (Generic),OT010,,Yes,,
+Theatre (Hybrid),OT015,,Yes,,
+Control Room for Hybrid,OT017,,Yes,Yes,
+Sterile Store,OT023,,Yes,,
 Equipment Store,OT025,Complete,Yes,Yes,Yes
-Pre-op bay,OT026,-,Yes,Yes,-
-Medi-room,OT027,-,Yes,Yes,-
-PACU Recovery bay,OT028,-,Yes,Yes,-
-"2nd Stage Recovery Bay, 4 patient",OT029,-,Yes,Yes,-
-Patient Bed wait,OT030,-,Yes,Yes,-
-PACU Recovery bay twin,OT031,-,Yes,Yes,-
-PACU Staff base,OT032,-,Yes,Yes,-
-Consult / Examination Room (single sided couch access),OUT001,-,Yes,Yes,Yes
-Consult / Examination Room (double sided couch access),OUT002,-,Yes,Yes,Yes
-Treatment room: double-sided couch access ,OUT003,-,Yes,Yes,Yes
-Physical measurement room,OUT004,-,Yes,Yes,-
-Phlebotomy,OUT005,-,Yes,Yes,-
-Treatment room: ENT,OUT017,-,Yes,Yes,-
+Pre-op bay,OT026,,Yes,Yes,
+Medi-room,OT027,,Yes,Yes,
+PACU Recovery bay,OT028,,Yes,Yes,
+"2nd Stage Recovery Bay, 4 patient",OT029,,Yes,Yes,
+Patient Bed wait,OT030,,Yes,Yes,
+PACU Recovery bay twin,OT031,,Yes,Yes,
+PACU Staff base,OT032,,Yes,Yes,
+Consult / Examination Room (single sided couch access),OUT001,,Yes,Yes,Yes
+Consult / Examination Room (double sided couch access),OUT002,,Yes,Yes,Yes
+Treatment room: double-sided couch access ,OUT003,,Yes,Yes,Yes
+Physical measurement room,OUT004,,Yes,Yes,
+Phlebotomy,OUT005,,Yes,Yes,
+Treatment room: ENT,OUT017,,Yes,Yes,
 Ophthalmic test room,OUT030,Complete,Yes,Yes,Yes
 Clean Store (Inpatient),WHO001,Complete,Yes,Yes,Yes
 Dirty Utility (Inpatient),WHO002,Complete,Yes,Yes,Yes
@@ -62,9 +62,9 @@ Medicine prep room,WHO004,Complete,Yes,Yes,Yes
 Interview room,WHO005,Complete,Yes,Yes,Yes
 Multi Functional Team Room (MFTR),WHO007,Complete,Yes,Yes,Yes
 Cleaners room,WHO008,Complete,Yes,Yes,Yes
-Staff Rest Inc Beverage bay  ,WHO024,-,Yes,-,-
-Staff Shower ,WHO025,-,Yes,-,-
-Waiting Area ,WHO026,-,Yes,-,-
+Staff Rest Inc Beverage bay  ,WHO024,,Yes,,
+Staff Shower ,WHO025,,Yes,,
+Waiting Area ,WHO026,,Yes,,
 WC,WHO027,Complete,Yes,Yes,Yes
 Baby Care (Breast Feeding),WHO029,Complete,Yes,Yes,Yes
 Dirty Utility (Outpatient),WHO035,Complete,Yes,Yes,Yes
