@@ -10,8 +10,7 @@ st.set_page_config(page_title="KPI Tracker",
                    
                    
         
-# Set main page title
-st.title("KPI Dashboard")
+
 
 
 
@@ -55,6 +54,9 @@ image = Image.open('MJMEDICAL.png')
 
 # Display image
 st.image(image)
+
+# Set main page title
+st.title("KPI Dashboard")
 
 # Load data from CSV files
 total_progress = pd.read_csv('progress/total_progress.csv')
