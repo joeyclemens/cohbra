@@ -130,3 +130,11 @@ st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 st.sidebar.markdown("<u>Areas needing most attention:</u>", unsafe_allow_html=True)
 # Add hyperlink to sidebar
 st.sidebar.write('<a href="https://mjmedical.sharepoint.com/:x:/s/COHBRA/Eb4o_yhqVspHjEDxC7hptYYBy4ryOXYl8nmXwHW0wT12Vw?e=tMaVJw&nav=MTVfezc5MUFEMjVBLTdDMUMtNEJERS1CRjU1LUM0QUMxQjgxQzcwRX0" style="color: orange; text-decoration: none;">• Specs</a>', unsafe_allow_html=True)
+
+hide_st_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
