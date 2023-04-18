@@ -144,5 +144,5 @@ header {visibility: hidden;}
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.markdown("""
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="static/style.css">
 """)
