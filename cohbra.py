@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 from datetime import datetime
-# from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 
 
@@ -121,7 +121,7 @@ elif option == 'Tables':
 
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 
-    st.table(selected_table)
+    AgGrid(selected_table)
 
 # Add a dividing line
 st.sidebar.markdown("<hr>", unsafe_allow_html=True)
