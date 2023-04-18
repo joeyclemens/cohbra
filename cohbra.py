@@ -99,7 +99,7 @@ st.sidebar.markdown("<u>Areas needing most attention:</u>", unsafe_allow_html=Tr
 # Add hyperlink to sidebar
 st.sidebar.write('<a href="https://mjmedical.sharepoint.com/:x:/s/COHBRA/Eb4o_yhqVspHjEDxC7hptYYBy4ryOXYl8nmXwHW0wT12Vw?e=tMaVJw&nav=MTVfezc5MUFEMjVBLTdDMUMtNEJERS1CRjU1LUM0QUMxQjgxQzcwRX0" style="color: black; text-decoration: none;"><b>• Specs</b></a>', unsafe_allow_html=True)
 # Add a dividing line
-st.sidebar.markdown("<hr>" style="color: black;, unsafe_allow_html=True)
+st.sidebar.markdown("<hr>" style="color: black;", unsafe_allow_html=True)
 
 # Add selectbox to choose which graph and table to show
 option = st.sidebar.selectbox('Select an option',
