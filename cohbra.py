@@ -3,12 +3,13 @@ from PIL import Image
 import pandas as pd
 import altair as alt
 from datetime import datetime
-# 4from st_aggrid import AgGrid
+# from st_aggrid import AgGrid
 
-
-
-
-
+st.set_page_config(page_title="KPI Tracker",
+                   layout="wide")
+                   
+                   
+        
 # Set main page title
 st.title("KPI Dashboard")
 
