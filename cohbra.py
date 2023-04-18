@@ -143,6 +143,7 @@ header {visibility: hidden;}
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.markdown("""
+style_css = """
 <link rel="stylesheet" href="static/style.css">
-""")
+""" 
+st.markdown(style_css, unsafe_allow_html=True)
