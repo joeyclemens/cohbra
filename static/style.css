@@ -7,7 +7,7 @@
 
 /* Style the table header */
 .dataframe th {
-    background-color: #1f618d;
+    background-color: red;
     color: #ffffff;
     font-weight: bold;
     padding: 8px;
