@@ -18,3 +18,4 @@ font = "Arial"
 # Whether to send usage statistics to Streamlit.
 # Default: true
 gatherUsageStats = false
+css = ["./static/style.css"]
