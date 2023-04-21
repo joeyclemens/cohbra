@@ -55,8 +55,18 @@ image = Image.open('MJMEDICAL.png')
 # Display image
 st.image(image)
 
-# Set main page title
-st.title("KPI Dashboard")
+
+
+# Open image
+image = Image.open('MJMEDICAL.png')
+
+
+
+# Define link URL
+link_url = "https://youshouldreallybedoingsomework.netlify.app/"
+
+# Display title as a link
+st.markdown(f'<a href="{link_url}" style="color: white; text-decoration: none;"><h1>KPI Dashboard</h1></a>', unsafe_allow_html=True)
 
 # Load data from CSV files
 total_progress = pd.read_csv('progress/total_progress.csv')
