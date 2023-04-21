@@ -65,6 +65,8 @@ dataentry_progress = pd.read_csv('progress/dataentry_progress.csv')
 roomloading_progress = pd.read_csv('progress/roomloading_progress.csv')
 activity_progress = pd.read_csv('progress/activity_progress.csv')
 cost_progress = pd.read_csv('progress/cost_progress.csv')
+activity_room_progress = pd.read_csv('progress/activity_room_progress.csv')
+
 ###################
 costs = pd.read_csv('costs.csv')
 cost_total = pd.read_csv('cost_progress_total.csv')
@@ -103,18 +105,14 @@ st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 
 # Add selectbox to choose which graph and table to show
 option = st.sidebar.selectbox('Select an option',
-                             ['Charts', 'Tables'])
+                             ['Room Progress','Progress','Tables'])
 
-if option == 'Charts':
+if option == 'Room Progress':
     charts = {
         'Total Room Progress (Equipment, Room loading, Activities)': total_progress,
         'Total Room Progress (Equipment, Room loading, Activities, Specs and Costs)': total_progress_with_specs_and_cost,
-        'Equipment Planning Progress': dataentry_progress,
-        'Room Loading Progress': roomloading_progress,
-        'Activity Progress': activity_progress,
-        'Cost left to do': cost_progress,
+        'Rooms with all activities done' : activity_room_progress,
         'Rooms with all costs done' : cost_total,
-        'Specs' : spec_progress,
         'Rooms with all specs done' : spec_room_progress
     }
 
@@ -124,8 +122,23 @@ if option == 'Charts':
 
     create_line_chart(selected_chart, chart_choice)
 
+elif option == 'Progress':
+    charts = {
+        'Equipment Planning Progress': dataentry_progress,
+        'Room Loading Progress': roomloading_progress,
+        'Activity Progress': activity_progress,
+        'Cost left to do': cost_progress,
+        'Specs' : spec_progress,
+        
+    }
+
+    chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
+
+    selected_chart = charts[chart_choice]
+
+    create_line_chart(selected_chart, chart_choice)
+
 elif option == 'Tables':
-   
     table_choice = st.sidebar.selectbox('Choose Table', list(tables.keys()))
     selected_table = tables[table_choice]
 
