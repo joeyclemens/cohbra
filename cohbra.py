@@ -8,11 +8,6 @@ from datetime import datetime
 st.set_page_config(page_title="KPI Tracker",
                    layout="wide")
                    
-                   
-        
-
-
-
 
 # Define function to create the line chart using Altair
 def create_line_chart(df, title):
