@@ -86,7 +86,7 @@ Priority_Rooms = pd.read_csv('priority.csv')
     
 tables = {
     'Total Room completion' : overall,
-    'Costs' : costs_to_do,
+    'Costs' : costs,
     'Specs' : specs,
     'Priority Rooms': Priority_Rooms
 }
