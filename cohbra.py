@@ -132,7 +132,7 @@ elif option == 'Progress':
         'Equipment Planning Progress': dataentry_progress,
         'Room Loading Progress': roomloading_progress,
         'Activity Progress': activity_progress,
-        'Cost left to do': cost_progress,
+        'Cost': cost_progress,
         'Specs' : spec_progress,
         
     }
