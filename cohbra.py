@@ -57,11 +57,13 @@ image = Image.open('MJMEDICAL.png')
 
 
 
-# Define link URL
+# easter egg link URL
 link_url = "https://youshouldreallybedoingsomework.netlify.app/"
 
 # Display title as a link
 st.markdown(f'<a href="{link_url}" style="color: white; text-decoration: none;"><h1>KPI Dashboard</h1></a>', unsafe_allow_html=True)
+
+##########CSV FILES LOAD#################
 
 # Load data from CSV files
 total_progress = pd.read_csv('progress/total_progress.csv')
@@ -91,7 +93,7 @@ tables = {
     'Priority Rooms': Priority_Rooms
 }
 
-
+########## Side bar ################
 
 # Add textbox to sidebar
 # Add textbox to sidebar
@@ -112,6 +114,7 @@ st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 option = st.sidebar.selectbox('Select an option',
                              ['Room Progress','Progress','Tables'])
 
+#Room progress drop down options
 if option == 'Room Progress':
     charts = {
         'Total Room Progress (Equipment, Room loading, Activities)': total_progress,
@@ -129,6 +132,7 @@ if option == 'Room Progress':
 
     create_line_chart(selected_chart, chart_choice)
 
+#Individual areas progress drop down options
 elif option == 'Progress':
     charts = {
         'Equipment Planning Progress': dataentry_progress,
@@ -145,6 +149,7 @@ elif option == 'Progress':
 
     create_line_chart(selected_chart, chart_choice)
 
+#Various tables drop down options
 elif option == 'Tables':
     table_choice = st.sidebar.selectbox('Choose Table', list(tables.keys()))
     selected_table = tables[table_choice]
@@ -153,6 +158,9 @@ elif option == 'Tables':
 
     st.table(selected_table)
 
+#CSS styling for the page
+#Mostly hides the stock header and footers
+#But also links to a seperate style sheet
 
 hide_st_style = """
 <style>
