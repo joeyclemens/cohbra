@@ -116,6 +116,7 @@ if option == 'Room Progress':
     charts = {
         'Total Room Progress (Equipment, Room loading, Activities)': total_progress,
         'Total Room Progress (Equipment, Room loading, Activities, Specs and Costs)': total_progress_with_specs_and_cost,
+        'Rooms with all activities done' : dataentry_progress,
         'Rooms with all activities done' : activity_room_progress,
         'Rooms with all costs done' : cost_total,
         'Rooms with all specs done' : spec_room_progress
