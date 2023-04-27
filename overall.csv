@@ -1,5 +1,5 @@
 Room Id,Data entry ,Activities,Room loading,Specs,Cost,Rooms Completed
-Totals -->,69,55,49,26,62,19
+Totals -->,69,57,50,26,62,19
 ED001,Yes,Yes,Yes,Yes,Yes,Yes
 ED002,Yes,Yes,,Yes,Yes,
 ED003,Yes,Yes,0, ,Yes,
@@ -8,10 +8,10 @@ ED008,Yes,Yes,Yes, ,Yes,
 ED009,Yes,Yes,Yes,Yes,Yes,Yes
 ED010,Yes,Yes,Yes,Yes,Yes,Yes
 ED011,Yes,Yes,Yes,Yes,Yes,Yes
-ED012,Yes,,, ,Yes,
+ED012,Yes,Yes,Yes, ,Yes,
 ED013,Yes,Yes,Yes, ,Yes,
 ED015,Yes,Yes,Yes,Yes,Yes,Yes
-ED016,Yes,,, ,Yes,
+ED016,Yes,Yes,, ,Yes,
 IMG009,Yes,Yes,Yes,Yes,Yes,Yes
 IMG011,Yes,Yes,Yes, ,Yes,
 IMG016,Yes,Yes,Yes, ,,
