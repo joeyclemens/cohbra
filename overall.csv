@@ -1,9 +1,9 @@
 Room Id,Data entry ,Activities,Room loading,Specs,Cost,Rooms Completed
-Totals -->,69,57,50,26,62,19
+Totals -->,69,64,56,26,62,23
 ED001,Yes,Yes,Yes,Yes,Yes,Yes
-ED002,Yes,Yes,,Yes,Yes,
-ED003,Yes,Yes,0, ,Yes,
-ED004,Yes,,,0,Yes,
+ED002,Yes,Yes,Yes,Yes,Yes,Yes
+ED003,Yes,Yes,Yes, ,Yes,
+ED004,Yes,,Yes,0,Yes,
 ED008,Yes,Yes,Yes, ,Yes,
 ED009,Yes,Yes,Yes,Yes,Yes,Yes
 ED010,Yes,Yes,Yes,Yes,Yes,Yes
@@ -29,26 +29,26 @@ INP007,Yes,Yes,,Yes,Yes,
 INP008,Yes,Yes,, ,Yes,
 INP009,Yes,Yes,, ,Yes,
 INP010,Yes,Yes,Yes, ,Yes,
-INP011,Yes,Yes,,Yes,Yes,
+INP011,Yes,Yes,Yes,Yes,Yes,Yes
 INP012,Yes,Yes,, ,Yes,
-INP013,Yes,Yes,, ,Yes,
+INP013,Yes,Yes,Yes, ,Yes,
 OT001,Yes,Yes,Yes, ,Yes,
 OT002,Yes,Yes,Yes,Yes,Yes,Yes
 OT003,Yes,Yes,Yes,Yes,Yes,Yes
 OT005,Yes,Yes,Yes, ,Yes,
-OT007,Yes,,, ,,
-OT010,Yes,,Yes, ,,
+OT007,Yes,Yes,Yes, ,,
+OT010,Yes,Yes,Yes, ,,
 OT015,Yes,,, ,,
 OT017,Yes,,Yes, ,,
 OT023,Yes,,Yes, ,,
 OT025,Yes,Yes,Yes, ,Yes,
 OT026,Yes,Yes,Yes,Yes,Yes,Yes
 OT027,Yes,Yes,Yes, ,Yes,
-OT028,Yes,,Yes, ,Yes,
-OT029,Yes,,Yes,Yes,Yes,
+OT028,Yes,Yes,Yes, ,Yes,
+OT029,Yes,Yes,Yes,Yes,Yes,Yes
 OT030,Yes,Yes,Yes,Yes,Yes,Yes
-OT031,Yes,,Yes, ,Yes,
-OT032,Yes,,Yes,Yes,Yes,
+OT031,Yes,Yes,Yes, ,Yes,
+OT032,Yes,Yes,Yes,Yes,Yes,Yes
 OUT001,Yes,Yes,Yes,Yes,Yes,Yes
 OUT002,Yes,Yes,Yes,Yes,Yes,Yes
 OUT003,Yes,Yes,Yes,Yes,Yes,Yes
@@ -64,7 +64,7 @@ WHO005,Yes,Yes,Yes, ,Yes,
 WHO007,Yes,Yes,Yes, ,Yes,
 WHO008,Yes,Yes,Yes, ,Yes,
 WHO024,Yes,Yes,Yes, ,Yes,
-WHO025,Yes,,, ,Yes,
+WHO025,Yes,Yes,, ,Yes,
 WHO026,Yes,Yes,Yes,Yes,Yes,Yes
 WHO027,Yes,Yes,Yes,Yes,Yes,Yes
 WHO029,Yes,Yes,Yes, ,Yes,

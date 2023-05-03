@@ -82,7 +82,7 @@ specs = pd.read_csv('specs.csv')
 spec_progress = pd.read_csv('progress/spec_progress.csv')
 spec_room_progress = pd.read_csv('progress/spec_room_progress.csv')
 overall = pd.read_csv('overall.csv')
-overall_header = pd.read_csv('overall_header.csv')
+overall_audit = pd.read_csv('overall_audit.csv')
 Priority_Rooms = pd.read_csv('priority.csv')
 
 ##################
@@ -95,7 +95,8 @@ tables = {
     'Total Room completion' : overall,
     'Costs' : costs,
     'Specs' : specs,
-    'Priority Rooms': Priority_Rooms
+    'Priority Rooms': Priority_Rooms,
+    'Audit' : overall_audit,
 }
 
 ########## Side bar ################
