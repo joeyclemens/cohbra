@@ -157,6 +157,20 @@ elif option == 'Tables':
     st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 
     st.table(selected_table)
+    
+#audit progress drop down options
+elif option == 'Audit':
+    charts = {
+        
+        'Specs' : spec_progress,
+        
+    }
+
+    chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
+
+    selected_chart = charts[chart_choice]
+
+    create_line_chart(selected_chart, chart_choice)    
 
 #CSS styling for the page
 #Mostly hides the stock header and footers
