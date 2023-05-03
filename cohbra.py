@@ -87,7 +87,9 @@ Priority_Rooms = pd.read_csv('priority.csv')
 
 ##################
 spec_audit = pd.read_csv('audit/spec_audit_progress.csv')
-
+data_audit = pd.read_csv('audit/dataentry_audit_progress.csv')
+activities_audit = pd.read_csv('audit/activities_audit_progress.csv')
+room_loading_audit = pd.read_csv('audit/room_loading_audit_progress.csv')
     
 tables = {
     'Total Room completion' : overall,
@@ -164,8 +166,10 @@ elif option == 'Tables':
 #audit progress drop down options
 elif option == 'Audit':
     charts = {
-        
+        'Equipment planning' :data_audit,
         'Specs' : spec_audit,
+        'Activities' : activities_audit, 
+        'Room Loading' : room_loading_audit,
         
     }
 
