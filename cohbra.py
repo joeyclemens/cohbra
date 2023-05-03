@@ -85,6 +85,9 @@ overall = pd.read_csv('overall.csv')
 overall_header = pd.read_csv('overall_header.csv')
 Priority_Rooms = pd.read_csv('priority.csv')
 
+##################
+spec_audit = pd.read_csv('audit/spec_audit_progress.csv')
+
     
 tables = {
     'Total Room completion' : overall,
@@ -162,7 +165,7 @@ elif option == 'Tables':
 elif option == 'Audit':
     charts = {
         
-        'Specs' : spec_progress,
+        'Specs' : spec_audit,
         
     }
 
