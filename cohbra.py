@@ -112,7 +112,7 @@ st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 
 # Add selectbox to choose which graph and table to show
 option = st.sidebar.selectbox('Select an option',
-                             ['Room Progress','Progress','Tables'])
+                             ['Room Progress','Progress','Tables', 'Audit'])
 
 #Room progress drop down options
 if option == 'Room Progress':
