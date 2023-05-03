@@ -76,7 +76,7 @@ activity_room_progress = pd.read_csv('progress/activity_room_progress.csv')
 
 ###################
 costs = pd.read_csv('costs.csv')
-cost_total = pd.read_csv('cost_progress_total.csv')
+cost_total = pd.read_csv('progress/cost_progress_total.csv')
 costs_to_do = pd.read_csv('costs_to_do.csv')
 specs = pd.read_csv('specs.csv')
 spec_progress = pd.read_csv('progress/spec_progress.csv')
