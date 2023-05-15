@@ -94,7 +94,7 @@ room_loading_audit = pd.read_csv('audit/room_loading_audit_progress.csv')
 tables = {
     'Total Room completion' : overall,
     'Costs' : costs,
-    'Specs' : specs,
+    #'Specs' : specs,
     'Priority Rooms': Priority_Rooms,
     'Audit' : overall_audit,
 }
