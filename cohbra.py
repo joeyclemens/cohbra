@@ -124,12 +124,12 @@ option = st.sidebar.selectbox('Select an option',
 if option == 'Room Progress':
     charts = {
         'Total Room Progress (Equipment, Room loading, Activities)': total_progress,
-        'Total Room Progress (Equipment, Room loading, Activities, Specs and Costs)': total_progress_with_specs_and_cost,
+        #'Total Room Progress (Equipment, Room loading, Activities, Specs and Costs)': total_progress_with_specs_and_cost,
         'Rooms with all equipment planning done' : dataentry_progress,
         'Rooms with all room loading done' : roomloading_progress,
         'Rooms with all activities done' : activity_room_progress,
         'Rooms with all costs done' : cost_total,
-        'Rooms with all specs done' : spec_room_progress
+        #'Rooms with all specs done' : spec_room_progress
     }
 
     chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
@@ -145,7 +145,7 @@ elif option == 'Progress':
         'Room Loading Progress': roomloading_progress,
         'Activity Progress': activity_progress,
         'Cost': cost_progress,
-        'Specs' : spec_progress,
+        #'Specs' : spec_progress,
         
     }
 
@@ -168,7 +168,7 @@ elif option == 'Tables':
 elif option == 'Audit':
     charts = {
         'Equipment planning' :data_audit,
-        'Specs' : spec_audit,
+        #'Specs' : spec_audit,
         'Activities' : activities_audit, 
         'Room Loading' : room_loading_audit,
         
