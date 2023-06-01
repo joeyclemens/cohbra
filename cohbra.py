@@ -91,13 +91,13 @@ data_audit = pd.read_csv('audit/dataentry_audit_progress.csv')
 activities_audit = pd.read_csv('audit/activities_audit_progress.csv')
 room_loading_audit = pd.read_csv('audit/room_loading_audit_progress.csv')
     
-tables = {
-    'Total Room completion' : overall,
-    'Costs' : costs,
-    #'Specs' : specs,
-    'Priority Rooms': Priority_Rooms,
-    'Audit' : overall_audit,
-}
+#tables = {
+#    'Total Room completion' : overall,
+#    'Costs' : costs,
+#    #'Specs' : specs,
+#    'Priority Rooms': Priority_Rooms,
+#    'Audit' : overall_audit,
+#}
 
 ########## Side bar ################
 
@@ -156,13 +156,13 @@ elif option == 'Progress':
     create_line_chart(selected_chart, chart_choice)
 
 #Various tables drop down options
-elif option == 'Tables':
-    table_choice = st.sidebar.selectbox('Choose Table', list(tables.keys()))
-    selected_table = tables[table_choice]
+#elif option == 'Tables':
+#    table_choice = st.sidebar.selectbox('Choose Table', list(tables.keys()))
+#    selected_table = tables[table_choice]
 
-    st.markdown(f"## {table_choice}", unsafe_allow_html=True)
+#    st.markdown(f"## {table_choice}", unsafe_allow_html=True)
 
-    st.table(selected_table)
+#    st.table(selected_table)
     
 #audit progress drop down options
 elif option == 'Audit':
