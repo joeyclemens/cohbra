@@ -103,32 +103,36 @@ room_loading_audit = pd.read_csv('audit/room_loading_audit_progress.csv')
 # Add CSS style for selected option in sidebar
 selected_option_style = """
 <style>
-.selected-option {
+.sidebar-container {
     background-color: blue;
     color: white;
 }
 </style>
 """
+
 # Apply selected option style to sidebar
 st.sidebar.markdown(selected_option_style, unsafe_allow_html=True)
-# Add textbox to sidebar
-# Add textbox to sidebar
-st.sidebar.markdown("<u>Links:</u>", unsafe_allow_html=True)
-# Add hyperlink to sidebar
-st.sidebar.write('<a href="https://mjmedical.sharepoint.com/:x:/s/COHBRA/Eb4o_yhqVspHjEDxC7hptYYBy4ryOXYl8nmXwHW0wT12Vw?e=tzJZid" style="color: black; text-decoration: none;"><b>KPI Tracker</b></a>', unsafe_allow_html=True)
-# Add a dividing line
-st.sidebar.markdown("<hr>", unsafe_allow_html=True)
+
 # Define options for the sidebar selectbox
 options = ['Room Progress', 'Progress', 'Audit']
+
 # Select option from the sidebar
 selected_option = st.sidebar.selectbox('Select an option', options)
 
-# Modify the sidebar options based on the selected option
+# Apply class to sidebar container based on the selected option
+sidebar_style = "sidebar-container" if selected_option else ""
+st.markdown(f'<div class="{sidebar_style}">', unsafe_allow_html=True)
+
+# Display the sidebar options
 for option in options:
     if option == selected_option:
         st.sidebar.markdown(f'<div class="selected-option">{option}</div>', unsafe_allow_html=True)
     else:
         st.sidebar.markdown(option)
+
+# Close the sidebar container
+st.markdown('</div>', unsafe_allow_html=True)
+
 # Add textbox to sidebar
 #st.sidebar.markdown("<u>Areas needing most attention:</u>", unsafe_allow_html=True)
 # Add hyperlink to sidebar
