@@ -184,9 +184,6 @@ elif option == 'Audit':
 elif option == 'Summary':
 
 
-
-    st.subheader('Total Progress Chart')
-
     # Create the line chart using total_progress dataframe
     create_line_chart(total_progress, 'Total Progress')
     
