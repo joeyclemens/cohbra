@@ -185,13 +185,29 @@ elif option == 'Summary':
     st.title('Summary Page')
     st.header('Summary Charts')
 
-    charts = {
-        'Total Room Progress (Equipment, Room loading, Activities & Costs)': total_progress}
-    chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
+    create_line_chart(total_progress, 'Total Room Progress (Equipment, Room loading, Activities & Costs)')
+    
+def create_line_chart(df, title):
+    df['Dates'] = pd.to_datetime(df['Dates'], format='%d/%m/%Y')
 
-    selected_chart = charts[chart_choice]
+    chart = alt.Chart(df).mark_line().encode(
+        x=alt.X('Dates:T', axis=alt.Axis(title='Date', format=("%d/%m/%Y"), tickCount=len(df.index))),
+        y=alt.Y('Actual', sort=None, title='Targets'),
+        tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
+    ).properties(
+        width=900
+    )
 
-    create_line_chart(selected_chart, chart_choice) 
+    target_line = alt.Chart(df).mark_line(strokeDash=[5, 5], stroke='red').encode(
+        x='Dates',
+        y=alt.Y('Target', sort=alt.EncodingSortField(field='Target', order='ascending')),
+    )
+
+    final_chart = chart + target_line
+
+    st.subheader(title)
+    st.altair_chart(final_chart)
+
     
 
 #CSS styling for the page
