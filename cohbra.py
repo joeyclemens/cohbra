@@ -118,7 +118,7 @@ st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 
 # Add selectbox to choose which graph and table to show
 option = st.sidebar.selectbox('Select an option',
-                             ['Room Progress','Progress','Audit'])
+                             ['Summary','Room Progress','Progress','Audit'])
 
 #Room progress drop down options
 if option == 'Room Progress':
@@ -179,6 +179,24 @@ elif option == 'Audit':
     selected_chart = charts[chart_choice]
 
     create_line_chart(selected_chart, chart_choice)    
+
+
+elif option == 'Summary':
+    st.title('Summary Page')
+    st.header('Summary Charts')
+
+    # Create a bar chart using Altair
+    data = pd.DataFrame({
+        'Category': ['A', 'B', 'C', 'D'],
+        'Value': [10, 25, 15, 30]
+    })
+    chart = alt.Chart(data).mark_bar().encode(
+        x='Category',
+        y='Value'
+    )
+    st.altair_chart(chart, use_container_width=True)
+
+    # Add more charts or content here
 
 #CSS styling for the page
 #Mostly hides the stock header and footers
