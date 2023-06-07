@@ -47,11 +47,12 @@ image = Image.open('MJMEDICAL.png')
 st.image(image)
 
 # Load data from Excel file
-excel_file = 'C:/Users/Joey/Desktop/Github/cohbra/test/combined.xlsx'
+excel_file = 'data.xlsx'
 xls = pd.ExcelFile(excel_file)
 
 # Read sheets from Excel file
 total_progress = pd.read_excel(xls, 'total_progress')
+total_progress_with_specs_and_cost = pd.read_excel(xls, 'total_progress_with_specs_and_cost')
 dataentry_progress = pd.read_excel(xls, 'dataentry_progress')
 roomloading_progress = pd.read_excel(xls, 'roomloading_progress')
 activity_progress = pd.read_excel(xls, 'activity_progress')
@@ -59,9 +60,17 @@ cost_progress = pd.read_excel(xls, 'cost_progress')
 activity_room_progress = pd.read_excel(xls, 'activity_room_progress')
 
 # Other sheets
-
+costs = pd.read_excel(xls, 'costs')
 cost_total = pd.read_excel(xls, 'cost_progress_total')
+costs_to_do = pd.read_excel(xls, 'costs_to_do')
+specs = pd.read_excel(xls, 'specs')
+spec_progress = pd.read_excel(xls, 'spec_progress')
+spec_room_progress = pd.read_excel(xls, 'spec_room_progress')
+overall = pd.read_excel(xls, 'overall')
+overall_audit = pd.read_excel(xls, 'overall_audit')
+Priority_Rooms = pd.read_excel(xls, 'priority')
 
+spec_audit = pd.read_excel(xls, 'spec_audit_progress')
 data_audit = pd.read_excel(xls, 'dataentry_audit_progress')
 activities_audit = pd.read_excel(xls, 'activities_audit_progress')
 room_loading_audit = pd.read_excel(xls, 'room_loading_audit_progress')
