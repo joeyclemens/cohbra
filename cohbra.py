@@ -185,18 +185,10 @@ elif option == 'Summary':
     st.title('Summary Page')
     st.header('Summary Charts')
 
-    # Create a bar chart using Altair
-    data = pd.DataFrame({
-        'Category': ['A', 'B', 'C', 'D'],
-        'Value': [10, 25, 15, 30]
-    })
-    chart = alt.Chart(data).mark_bar().encode(
-        x='Category',
-        y='Value'
-    )
-    st.altair_chart(chart, use_container_width=True)
-
-    # Add more charts or content here
+    charts = {
+        'Total Room Progress (Equipment, Room loading, Activities & Costs)': total_progress}
+    
+    
 
 #CSS styling for the page
 #Mostly hides the stock header and footers
