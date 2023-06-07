@@ -47,7 +47,7 @@ image = Image.open('MJMEDICAL.png')
 st.image(image)
 
 # Load data from Excel file
-excel_file = 'C:/Users/Joey/Desktop/Github/cohbra/test/combined.xlsx'
+excel_file = 'test/combined.xlsx'
 xls = pd.ExcelFile(excel_file)
 
 # Read sheets from Excel file
