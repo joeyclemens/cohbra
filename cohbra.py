@@ -195,7 +195,7 @@ def create_line_chart(df, title):
         y=alt.Y('Actual', sort=None, title='Targets'),
         tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
     ).properties(
-        width=500
+        width=100
     )
 
     target_line = alt.Chart(df).mark_line(strokeDash=[5, 5], stroke='red').encode(
