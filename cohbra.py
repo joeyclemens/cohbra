@@ -187,7 +187,11 @@ elif option == 'Summary':
 
     charts = {
         'Total Room Progress (Equipment, Room loading, Activities & Costs)': total_progress}
-    
+    chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
+
+    selected_chart = charts[chart_choice]
+
+    create_line_chart(selected_chart, chart_choice)
     
 
 #CSS styling for the page
