@@ -185,17 +185,13 @@ elif option == 'Summary':
     st.title('Summary Page')
     st.header('Summary Charts')
 
-    # Create the first chart using Altair
-    chart1 = alt.Chart(total_progress).mark_line().encode(
-        x=alt.X('Dates:T', axis=alt.Axis(title='Date', format=("%d/%m/%Y"), tickCount=len(total_progress.index))),
-        y=alt.Y('Actual', sort=None, title='Targets'),
-        tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
-    ).properties(
-        width=600  # Set the chart width to 600 pixels
-    )
+    charts = {
+        'Total Room Progress (Equipment, Room loading, Activities & Costs)': total_progress}
+    chart_choice = st.sidebar.selectbox('Choose chart', list(charts.keys()))
 
-    # Display the first chart
-    st.altair_chart(chart1)
+    selected_chart = charts[chart_choice]
+
+    create_line_chart(selected_chart, chart_choice) 
     
 
 #CSS styling for the page
