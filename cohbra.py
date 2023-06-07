@@ -182,8 +182,8 @@ elif option == 'Audit':
 
 
 elif option == 'Summary':
-    st.title('Summary Page')
-    st.header('Summary Charts')
+
+
 
     st.subheader('Total Progress Chart')
 
