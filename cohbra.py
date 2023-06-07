@@ -189,6 +189,33 @@ elif option == 'Summary':
 
     # Create the line chart using total_progress dataframe
     create_line_chart(total_progress, 'Total Progress')
+def create_line_chart(df, title):
+    # Convert Dates column to datetime type for plotting purposes
+    df['Dates'] = pd.to_datetime(df['Dates'], format='%d/%m/%Y')
+
+    # Define the line chart using Altair
+    chart = alt.Chart(df).mark_line().encode(
+        x=alt.X('Dates:T', axis=alt.Axis(title='Date', format=("%d/%m/%Y"), tickCount=len(df.index))),
+        y=alt.Y('Actual', sort=None, title='Targets'),
+        tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
+    ).properties(
+        width=900  # Set the chart width to 900 pixels
+    )
+
+    # Add target line to chart
+    target_line = alt.Chart(df).mark_line(strokeDash=[5, 5], stroke='red').encode(
+        x='Dates',
+        y=alt.Y('Target', sort=alt.EncodingSortField(field='Target', order='ascending')),
+    )
+
+    # Combine the two charts
+    final_chart = chart + target_line
+
+    # Set the subtitle of the chart
+    st.subheader(title)
+
+    st.altair_chart(final_chart)
+    
 
 
    
