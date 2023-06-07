@@ -187,8 +187,7 @@ elif option == 'Summary':
 
     st.subheader('Total Progress Chart')
 
-    # Create the line chart using total_progress dataframe
-    create_line_chart(total_progress, 'Total Progress')
+
 def create_line_chart(df, title):
     # Convert Dates column to datetime type for plotting purposes
     df['Dates'] = pd.to_datetime(df['Dates'], format='%d/%m/%Y')
