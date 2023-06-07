@@ -217,7 +217,6 @@ def create_line_chart(df, title):
 
     st.altair_chart(final_chart)
 
-# Remove the table display code from the original code
 
     
 
