@@ -91,11 +91,6 @@ data_audit = pd.read_csv('audit/dataentry_audit_progress.csv')
 activities_audit = pd.read_csv('audit/activities_audit_progress.csv')
 room_loading_audit = pd.read_csv('audit/room_loading_audit_progress.csv')
 
-# Define the pie chart data
-pie_data = pd.DataFrame({
-    'Category': ['Category A', 'Category B', 'Category C'],
-    'Value': [30, 40, 50]
-})
     
 #tables = {
 #    'Total Room completion' : overall,
@@ -124,7 +119,7 @@ st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 
 # Add selectbox to choose which graph and table to show
 option = st.sidebar.selectbox('Select an option',
-                             ['Summary','Room Progress','Progress','Audit'])
+                             ['Room Progress','Progress','Audit'])
 
 #Room progress drop down options
 if option == 'Room Progress':
@@ -186,61 +181,6 @@ elif option == 'Audit':
 
     create_line_chart(selected_chart, chart_choice)    
 
-
-
-
-elif option == 'Summary':
-    st.title('Summary Page')
-    st.header('Summary Charts')
-
-    st.subheader('Total Progress Chart')
-
-    # Create the line chart using total_progress dataframe
-    create_line_chart(total_progress, 'Total Progress')
-
-    st.subheader('Pie Chart')
-
-    # Create and display the pie chart using pie_data
-    create_pie_chart(pie_data, 'Sample Pie Chart')
-    
-def create_line_chart(df, title):
-    # Convert Dates column to datetime type for plotting purposes
-    df['Dates'] = pd.to_datetime(df['Dates'], format='%d/%m/%Y')
-
-    # Define the line chart using Altair
-    chart = alt.Chart(df).mark_line().encode(
-        x=alt.X('Dates:T', axis=alt.Axis(title='Date', format=("%d/%m/%Y"), tickCount=len(df.index))),
-        y=alt.Y('Actual', sort=None, title='Targets'),
-        tooltip=[alt.Tooltip('Dates', title='Date'), alt.Tooltip('Actual', title='Target')]
-    ).properties(
-        width=900  # Set the chart width to 900 pixels
-    )
-
-    # Add target line to chart
-    target_line = alt.Chart(df).mark_line(strokeDash=[5, 5], stroke='red').encode(
-        x='Dates',
-        y=alt.Y('Target', sort=alt.EncodingSortField(field='Target', order='ascending')),
-    )
-
-    # Combine the two charts
-    final_chart = chart + target_line
-
-    # Set the subtitle of the chart
-    st.subheader(title)
-
-    st.altair_chart(final_chart)
-
-def create_pie_chart(df, title):
-    chart = alt.Chart(df).mark_circle().encode(
-        color=alt.Color('Category:N', legend=alt.Legend(title='Category')),
-        tooltip=['Category', 'Value']
-    ).properties(
-        title=title,
-        width=400,
-        height=400
-    )
-
-    st.altair_chart(chart)
 
     
 
