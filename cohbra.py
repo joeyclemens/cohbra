@@ -187,6 +187,11 @@ elif option == 'Summary':
     # Create the line chart using total_progress dataframe
     create_line_chart(total_progress, 'Total Progress')
     
+    st.subheader('Pie Chart')
+
+    # Create and display the pie chart using your data
+    create_pie_chart(pie_data, 'Sample Pie Chart')
+    
 def create_line_chart(df, title):
     # Convert Dates column to datetime type for plotting purposes
     df['Dates'] = pd.to_datetime(df['Dates'], format='%d/%m/%Y')
@@ -214,6 +219,17 @@ def create_line_chart(df, title):
 
     st.altair_chart(final_chart)
 
+def create_pie_chart(df, title):
+    chart = alt.Chart(df).mark_circle().encode(
+        color=alt.Color('Category:N', legend=alt.Legend(title='Category')),
+        tooltip=['Category', 'Value']
+    ).properties(
+        title=title,
+        width=400,
+        height=400
+    )
+
+    st.altair_chart(chart)
 
     
 
