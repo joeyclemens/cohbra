@@ -90,6 +90,12 @@ spec_audit = pd.read_csv('audit/spec_audit_progress.csv')
 data_audit = pd.read_csv('audit/dataentry_audit_progress.csv')
 activities_audit = pd.read_csv('audit/activities_audit_progress.csv')
 room_loading_audit = pd.read_csv('audit/room_loading_audit_progress.csv')
+
+# Define the pie chart data
+pie_data = pd.DataFrame({
+    'Category': ['Category A', 'Category B', 'Category C'],
+    'Value': [30, 40, 50]
+})
     
 #tables = {
 #    'Total Room completion' : overall,
@@ -181,15 +187,20 @@ elif option == 'Audit':
     create_line_chart(selected_chart, chart_choice)    
 
 
-elif option == 'Summary':
 
+
+elif option == 'Summary':
+    st.title('Summary Page')
+    st.header('Summary Charts')
+
+    st.subheader('Total Progress Chart')
 
     # Create the line chart using total_progress dataframe
     create_line_chart(total_progress, 'Total Progress')
-    
+
     st.subheader('Pie Chart')
 
-    # Create and display the pie chart using your data
+    # Create and display the pie chart using pie_data
     create_pie_chart(pie_data, 'Sample Pie Chart')
     
 def create_line_chart(df, title):
