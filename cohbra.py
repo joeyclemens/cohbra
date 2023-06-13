@@ -5,6 +5,24 @@ import altair as alt
 from datetime import datetime
 # from st_aggrid import AgGrid
 
+#CSS styling for the page
+#Mostly hides the stock header and footers
+#But also links to a seperate style sheet
+
+hide_st_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+style_css = """
+<link rel="stylesheet" href="static\style.css">
+""" 
+st.markdown(style_css, unsafe_allow_html=True)
+
 # Loading Image using PIL
 im = Image.open('icon.png')
 
