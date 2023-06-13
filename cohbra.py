@@ -8,7 +8,7 @@ from datetime import datetime
 # Loading Image using PIL
 im = Image.open('icon.png')
 
-st.set_page_config(page_title="KPI Tracker", page_icon = im
+st.set_page_config(page_title="KPI Tracker", page_icon = im, 
                    layout="wide")
                    
 
