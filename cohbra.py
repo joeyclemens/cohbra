@@ -5,7 +5,10 @@ import altair as alt
 from datetime import datetime
 # from st_aggrid import AgGrid
 
-st.set_page_config(page_title="KPI Tracker",
+# Loading Image using PIL
+im = Image.open('icon.png')
+
+st.set_page_config(page_title="KPI Tracker", page_icon = im,
                    layout="wide")
                    
 
