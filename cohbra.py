@@ -112,6 +112,7 @@ st.sidebar.markdown("<u>Links:</u>", unsafe_allow_html=True)
 st.sidebar.write('<a href="https://mjmedical.sharepoint.com/:x:/s/COHBRA/Eb4o_yhqVspHjEDxC7hptYYBy4ryOXYl8nmXwHW0wT12Vw?e=tzJZid" style="color: black; text-decoration: none;"><b>KPI Tracker</b></a>', unsafe_allow_html=True)
 # Add a dividing line
 st.sidebar.markdown("<hr>", unsafe_allow_html=True)
+st.sidebar.markdown("<u>This application is now obsolete. Please see the new version in the below link</u>", unsafe_allow_html=True)
 st.sidebar.write('<a href="https://mjm-kpi-tracker-2324.streamlit.app/" style="color: black; text-decoration: none;"><b>KPI Dashboard for 2023/2024</b></a>', unsafe_allow_html=True)
 st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 # Add textbox to sidebar
